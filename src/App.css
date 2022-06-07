@@ -206,7 +206,6 @@ nav ul li{
     flex-direction: column;
     row-gap: 50px;
     align-items:center;
-    row-gap: 50px;
 }
 .industry-experience a{
     text-align: center;
