@@ -19,6 +19,10 @@ nav{
     top:0px;
 }
 nav a{color: white;}
+nav ul li:hover{
+    background-color: red;
+    color: white;
+}
 img{
     width:150px;
     height:37.14px;
