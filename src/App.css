@@ -342,7 +342,7 @@ footer{
     padding: 2rem;
 }
 
-@media screen and (max-width: 683px) {
+@media screen and (max-width: 600px) {
     body{
         position: absolute
     }
