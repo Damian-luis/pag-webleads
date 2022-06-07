@@ -2,6 +2,10 @@ import "./App.css";
 import { useState } from "react";
 import axios from "axios";
 import swal from "sweetalert";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
 function App() {
   const [name,setName]=useState("");
   const [company,setCompany]=useState("");
@@ -36,26 +40,27 @@ function App() {
   function successButton(){
     
     swal("Mensaje enviado con exito!", "Muchas gracias por comunicarte con Webleads ;)", "success")
-    document.getElementById("fofi").reset();
+    document.getElementById("form-reset").reset();
   }
   return (
     <div className="App">
       <nav>
-        <img src={require('./imagenes/logotipo.png')} alt="logo-webleads"/>
+        <a href="https://webleadsgroup.com/"><img src={require('./imagenes/logotipo.png')} alt="logo-webleads"/></a>
         <ul>
-            <li>HOME</li>
-            <li>SERVICES</li>
-            <li>CONTACT</li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#our-services">SERVICES</a></li>
+            <li><a href="#form-id">CONTACT</a></li>
         </ul>
       </nav>
-      <div className="presentation">
+      <div className="presentation" id="home">
       <span>#WeAreWebLeads</span>
       <h1> Software Development Outsourcing <br/>Services </h1>
       <p> Hire In-Demand Skills, On-Demand TM Web. Software, Mobile,DevOps and BlockChain. </p>
-      <a href="#" className="first-button">SCHEDULE TIME TO TALK </a>
+      <a href="#form-id" className="first-button">SCHEDULE TIME TO TALK </a>
       <a href="#" className="presentation-final"> Or, Use this form to share your requirements. Get guaranteed response within 8 Hrs. </a>
       </div>
-      <div className="our-services">
+
+      <div className="our-services" id="our-services">
         <h2>Our Services</h2>
         <p> WebLeads helps you adapt your company's business processes so that you can focus on what really matters to you. you can focus on what really matters to you, thus facilitating the achievement of your goals, adding value to your customers, and increasing the productivity of your resources. </p>
       </div>
@@ -131,7 +136,7 @@ function App() {
       </div>
       <div className="three-steps">
       <div className="three-steps-text">
-      <a href="#" className="first-button">SCHEDULE TIME TO TALK </a>
+      <a href="#form-id" className="first-button">SCHEDULE TIME TO TALK </a>
       <a href="#" className="presentation-final"> Or, Use this form to share your requirements. Get guaranteed response within 8 Hrs. </a>
       <h2>3 Steps To Hire Your Remote Developer</h2>
       <img src={require("./imagenes/linea.png")}/>
@@ -201,11 +206,6 @@ function App() {
       </div>
       </div>
 
-      <div className="section-carrusel">
-      <h2>Our Clients</h2>
-        <div className="carrusel"></div>
-      </div>
-
       <h2 className="ourInfrastructure">Our Infrastructure</h2>
 
       <div className="long-cards">
@@ -223,7 +223,7 @@ function App() {
         </div>
       </div>
 
-      <div className="form">
+      <div className="form" id="form-id">
         <div className="form-left">
         <h2>We’d Love To Hear From You </h2>
         <p>Get Custom Solutions, Recommendations, Resumes, or, Estimates. Confidentiality &amp; Same Day Response Guaranteed! </p>
@@ -236,7 +236,7 @@ function App() {
         </div>
 
         <div className="form-right">
-        <form onSubmit={send} id="fofi">
+        <form onSubmit={send} id="form-reset">
             <input type="text" placeholder="Your name*" id="name" onChange={nameHandler}/>
             <input type="email" placeholder="Work email*" onChange={mailHandler}/>
             <input type="number" placeholder="Mobile number*" onChange={numberHandler}/>
@@ -261,16 +261,17 @@ function App() {
         </div>
         </div>
       </div>
-
+      
       <footer>
         <div className="footer-left">
-        <p>© 2022 WebLeads. All rights reserved</p>
+        <p>© 2022 WebLeads. All rights reserved</p> <div className="div-social"><a href="https://www.instagram.com/webleadsok/"><FaInstagramSquare className="social"/></a><a href="https://www.facebook.com/webleadsok"><FaFacebookF className="social"/></a><a href="https://ar.linkedin.com/company/webleadsok"><FaLinkedinIn className="social"/></a><a href="https://github.com/webleads-software"><FaGithubSquare className="social"/></a></div>
         </div>
         <div className="footer-right">
         <a href=""> Terms &amp; Conditions</a>
         |
         <a href="">Privacy Policy</a>
         </div>
+        
       </footer>
 
     </div>
