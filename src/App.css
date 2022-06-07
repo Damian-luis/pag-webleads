@@ -1,38 +1,550 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: #1b1e28;
+}
+nav{
+    background-color: #272b39;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:77.14px;
+    width: 100%;
+    position:fixed;
+    top:0px;
+}
+img{
+    width:150px;
+    height:37.14px;
+}
+nav ul{
+    display:flex;
+    gap:25px;
+}
+nav ul li{
+    list-style-type:none;
+    color: #b8becd;
+    font-family: DM Sans,sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.presentation{
+    padding-top: 100px;
+    padding-left: 6%;
+    width:60%;
+    display:flex;
+    flex-direction:column;
+    margin: 15px 20px;
+    row-gap: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.presentation span{
+    color:white;
+    font-size: 20px;
+    font-weight: 400;
+}
+.presentation h1{
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+}
+.presentation p{
+    font-size: 22px;
+    color: white;
+}
+.first-button{
+    background-color:#ff304a;
+    border-radius: 10px;
+    padding: 15px 20px;
+    width: 328px;
+    font-size: 20px;
+    color: white;
+}
+.presentation-final{
+    color: white;
+}
+
+.our-services{
+    text-align: center;
+    padding-top: 100px;
+    display:flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+}
+.our-services h2{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    width: 80%;
+    
+}
+.our-services p{
+    color: white;
+    font-size: 24px;
+    width: 80%;
+}
+.cards-services{
+    display:flex;
+    flex-wrap: wrap;
+    height:auto;
+    justify-content:center;
+}
+.card-services{
+    width: 295px;
+    color: white;
+    border-radius:30px;
+    background-color:rgba(255, 255, 255, 0.37);
+    border: 1px solid white;
+    margin: 72px 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap:20px;
+}
+.card-services h3 {
+    font-size:28px;
+    text-align: center;
+}
+.card-services p{
+    
+    text-align: center;
+}
+.card-services img{
+    width: 70px;
+    height: 70px;
+}
+.text{
+    padding: 80px;
+}
+.text h2{
+    font-size: 60px;
+   
+    text-align: center;
+    color:white;
+}
+
+.mini-cards{
+    height:auto;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.mini-card{
+    width:50%;
+    display:flex;
+    align-items: center;
+    padding: 50px;
+}
+.mini-card img{
+    width:130px;
+    height:130px;
+    border:1px solid white;
+    object-fit: contain;
+    padding: 2rem;
+    border-radius:10px;
+}
+.mini-card p{
+    color:white;
+    text-align:left;
+    padding-left: 5%;
+}
+.three-steps{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.three-steps-text{
+    display:flex;
+    flex-direction:column;
+    row-gap:50px;
+    align-items:center;
+    
+}
+.three-steps-text h2{
+    font-size:60px;
+    color:white;
+    text-align:center;
+}
+.three-steps-text img{
+    width:40%;
+}
+.three-steps-cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin: 50px;
+}
+.three-steps-card{
+    width:295px;
+    background-color:hsla(0,0%,100%,.37);
+    padding:20px;
+    text-align:center;
+    border-radius:30px;
+    border: 1px solid white;
+}
+.three-steps-card img{
+    width: 77px;
+    height: 77px;
+}
+.three-steps-card h3{
+    font-size:28px;
+    text-align: center;
+    color: white;
+}
+.three-steps-card p{
+    text-align: center;
+    color: white;
+    opacity: 0.7;
+}
+.industry-experience{
+    display:flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items:center;
+    row-gap: 50px;
+}
+.industry-experience a{
+    text-align: center;
+}
+.industry-experience h2{
+    font-size:60px;
+    text-align: center;
+    color: white;
+}
+.industry-experience p{
+    font-size:25px;
+    color: white;
+    text-align: center;
+}
+.cards-experience{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    row-gap:100px;
+}
+.card-experience{
+    width:25%;
+    text-align: center;
+}
+.card-experience img{
+    width:192px;
+    height: 127px;
+}
+.ourInfrastructure{
+    font-size:60px;
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
+
+.long-cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+.long-card{
+    width: 342px;
+}
+.long-card img{
+    width: 342px;
+    height: 488px;
+}
+.long-card h3{
+    font-size:25px;
+    color: white;
+    width:80%;
+    text-align: center;
+}
+
+.form{
+    display:flex;
+    flex-wrap: wrap;
+}
+.form-left{
+    width: 50%;
+    background:linear-gradient(180deg,#1b1e28,#2babf0 80%);
+}
+.form-left h2{
+    font-size: 40px;
+    text-align: left;
+    margin: 35px;
+    width: 80%;
+    color: white;
+}
+.form-left p{
+    font-size: 20px;
+    color: white;
+    margin: 35px;
+    width: 80%;
+}
+.form-left img{
+    width: 67.8px; height:67.8px;
+}
+.form-right{
+    width: 50%;
+    background-color: white;
+    padding: 2rem;
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+form input{
+    padding: 20px 5px;
+    border-bottom: 1px solid #d0d0d0;
+    border:none;
+}
+form textarea{
+    padding: 20px 5px;
+    border-bottom: 1px solid #d0d0d0;
+    border:none;
+}
+.computer{
+    color: rgb(255, 48, 74); border-bottom: 1px solid rgb(255, 48, 74);
+}
+.google-docs{
+    color: rgb(43, 171, 240); border-bottom: 1px solid rgb(43, 171, 240)
+}
+.dropbox{
+    color: rgb(255, 204, 1); border-bottom: 1px solid rgb(255, 204, 1);
+}
+
+.ubication{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    color: white;
+    padding: 80px;
+}
+.ubication-center{
+    display: flex;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+.country{
+    font-size:20px;
+    padding: 4rem 2rem;
+}
+footer{
+    display:flex;
+    justify-content:space-around;
+    background-color:#0b0d17;
+    color: white;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 683px) {
+    body{
+        position: absolute
+    }
+    nav{
+        height:100px
+    }
+    .presentation{
+        padding-top: 150px;
+        row-gap: 40px;
+    }
+    .presentation h1{
+        font-size:60px
+    }
+    .presentation p{
+        font-size: 20px;
+    }
+    .first-button{
+        width:280px;
+        font-size: 18px;
+    }
+    .our-services{
+        padding-top: 100px;
+    }
+    .card-services{
+        width:80%;
+        padding: 10%;
+    }
+    .mini-cards{
+        justify-content: center;
+        row-gap:60px;
+    }
+    .mini-card{
+        width: 60%;
+        display:flex;
+        flex-direction: column;
+        row-gap:30px;
+    }
+    .mini-card p{
+        text-align: center;
+        font-size: 25px;
+    }
+    .three-steps{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+    }
+    
+    .three-steps-text{
+        width: 80%;
+        row-gap:80px;
+    }
+    .presentation-final{
+        font-size:20px;
+        text-align:center;
+    }
+    .three-steps-text img{
+        width:80%;
+        height: 20px;
+    }
+    .three-steps-cards{
+        padding-top: 100px;
+        row-gap:150px;
+    } 
+    .three-steps-card{
+        width:80%;
+
+    }
+    .three-steps-card h3{
+        font-size:35px;
+        
+    }
+    .three-steps-card p{
+        font-size:25px;
+        
+    }
+    .three-steps-card img{
+        width: 150px;
+        height: 150px;
+    }
+    .industry-experience{
+        padding-top:100px;
+
+    }
+    .industry-experience h2{
+        font-size:40px;
+    }
+    .industry-experience p{
+        padding: 0px 20px;
+    }
+    .cards-experience{
+        padding-top: 100px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        row-gap:150px;
+    }
+    .card-experience{
+        width: 60%;
+    }
+    .card-experience img{
+        width: 250px;
+        height: 175px;
+    }
+    .long-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap:100px;
+        padding-bottom: 150px;
+    }
+    .long-card{
+        justify-content:center;
+    }
+    .long-card h3{
+        width: 100%;
+        text-align: center;
+        padding-top:30px;
+    }
+    .form{
+        display:flex;
+    }
+    .form-left{
+        width: 100%;
+        padding: 5%;
+    }
+    .fotos{
+        padding-left: 5%;
+        display: flex;
+        gap: 20px;
+    }
+    .wn{
+        font-weight: 700;
+    }
+    .form-right{
+        width: 100%;
+        padding: 50px;
+    }
+    
+    .ubication{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        padding-top:100px;
+        padding-bottom: 100px;
+    }
+    .ubication-center{
+        border: 3px solid white;
+        border-radius:10px;
+    }
+    
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @media screen and (min-width: 683px) and (max-width:1000px){
+      .text{
+        padding-top: 50px;
+        padding-bottom: 150px;
+      }
+      .mini-cards{
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          row-gap: 50px;
+      }
+      .mini-card{
+          width: 80%;
+      }
+      .three-steps-text{
+        padding-top: 100px;
+      }
+      .three-steps-text h2{
+          font-size: 50px;
+      }
+      .three-steps-cards{
+        gap: 50px;
+        padding-bottom: 80px;
+      }
+      .industry-experience{
+        padding-bottom: 80px;
+      }
+      .cards-experience{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+        row-gap:100px;
+      }
+      .card-experience{
+          width: 45%;
+      }
+      .ourInfrastructure{
+        margin: 20px;
+      }
+      .long-cards{
+        justify-content: space-around;
+        padding-top: 80px;
+        row-gap: 80px;
+        padding-bottom: 80px;
+      }
+      .fotos{
+        padding-left: 5%;
+        column-gap: 20px;
+        display: flex;
+      }
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
