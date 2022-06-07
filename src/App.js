@@ -1,12 +1,13 @@
 import "./App.css";
 import { useState } from "react";
 import axios from "axios";
+import swal from "sweetalert";
 function App() {
   const [name,setName]=useState("");
-  const [company,setCompany]=useState();
-  const [mail,setMail]=useState();
-  const [message,setMessage]=useState();
-  const [number,setNumber]=useState();
+  const [company,setCompany]=useState("");
+  const [mail,setMail]=useState("");
+  const [message,setMessage]=useState("");
+  const [number,setNumber]=useState("");
   function nameHandler(e) {
     setName(e.target.value);
   }
@@ -26,11 +27,16 @@ function App() {
   
   const send=async(e)=>{
     e.preventDefault();
-    try{console.log("madadno info")
+    try{console.log("enviando informacion...")
       await axios.post("https://whispering-depths-85783.herokuapp.com/enviar",{name,company,mail,number,message})
-      console.log("paso")
+      
     }
-    catch(error){console.log(error)}
+    catch(error){}
+  }
+  function successButton(){
+    
+    swal("Mensaje enviado con exito!", "Muchas gracias por comunicarte con Webleads ;)", "success")
+    document.getElementById("fofi").reset();
   }
   return (
     <div className="App">
@@ -230,14 +236,14 @@ function App() {
         </div>
 
         <div className="form-right">
-        <form onSubmit={send}>
-            <input type="text" placeholder="Your name*" value={name} id="name" onChange={nameHandler}/>
+        <form onSubmit={send} id="fofi">
+            <input type="text" placeholder="Your name*" id="name" onChange={nameHandler}/>
             <input type="email" placeholder="Work email*" onChange={mailHandler}/>
             <input type="number" placeholder="Mobile number*" onChange={numberHandler}/>
             <input type="text" placeholder="Company*" onChange={companyHandler}/> 
             <textarea placeholder="Your Message/Requirements" onChange={messageHandler}></textarea>
             <p> Attach files Select files from your <span className="computer">Computer</span> or <span className="google-docs">Google Docs</span> or <span className="dropbox">Dropbox URLs</span></p>
-            <button type="submit" className="first-button">ENQUIRE NOW</button>
+            <button type="submit" className="first-button" onClick={successButton}>ENQUIRE NOW</button>
           </form>
         </div>
       </div>
