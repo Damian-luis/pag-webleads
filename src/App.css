@@ -4,7 +4,7 @@
     box-sizing: border-box;
     
 }
-a:visited{ color: white }
+
 body {
     background-color: #1b1e28;
 }
@@ -18,10 +18,13 @@ nav{
     position:fixed;
     top:0px;
 }
-nav a{color: white;}
-nav ul li:hover{
-    background-color: red;
+nav a{
+    text-decoration: none;
+    color:#b8becd
+}
+nav ul li a:hover{
     color: white;
+    
 }
 img{
     width:150px;
@@ -29,7 +32,7 @@ img{
 }
 nav ul{
     display:flex;
-    gap:25px;
+    gap: 15px;
 }
 nav ul li{
     list-style-type:none;
