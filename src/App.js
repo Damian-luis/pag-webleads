@@ -8,6 +8,9 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css"
+import { default as logo1 } from "./imagenes/Gradient01.svg";
+import { default as logo2 } from "./imagenes/Gradient02.svg";
+import { default as logo3 } from "./imagenes/Gradient03.svg";
 function App() {
   const [name,setName]=useState("");
   const [company,setCompany]=useState("");
@@ -71,6 +74,7 @@ function App() {
       </div>
 
       <div  data-aos="fade-up" className="navecita"><img src={require('./imagenes/nave.png')} alt="navecita"/></div> 
+<img src={logo1} className="gradient1"/>
 
       <div  data-aos="fade-up" className="our-services" id="our-services" >
         <h2>Our Services</h2>
@@ -92,6 +96,7 @@ function App() {
         <h3>Mobile App Development</h3>
         <p> Our developers build native or hybrid apps for iOS and Android using the latest tech stack. We have expertise in fintech, edtech, healthcare, streaming industries, and more. Hire developers with expertise in iOS, Android, Xamarin, Apache Cordova, PWA, React Native, Flutter, Ionic, and more. </p>
         </div>
+        <img src={logo2} className="gradient2"/>
         <div className="text">
           <h2> Build Your Dedicated Team With Our Top Tech Skills </h2>
         </div>
@@ -204,7 +209,7 @@ function App() {
       <div data-aos="zoom-in" className="card-experience">
       <img className="img7" src={require("./imagenes/06.png")}/>
       </div>
-      
+      <img src={logo3} className="gradient3"/>
       <div data-aos="zoom-in" className="card-experience">
       <img className="img8" src={require("./imagenes/08.png")}/>
       </div>
@@ -247,10 +252,10 @@ function App() {
   */}
 
 
-
+<img src={logo1} className="gradient4"/>
       <h2 className="ourInfrastructure">Our Infrastructure</h2>
 
-
+      
 
       <div className="long-cards">
         <div data-aos="zoom-in-up" className="long-card">
@@ -274,7 +279,6 @@ function App() {
         <p className="wn">What’s next?</p>
         <p>One of our Account Managers will contact you shortly</p>
         </div>
-
         <div className="form-right">
         <form onSubmit={send} id="form-reset">
             <input type="text" placeholder="Your name*" id="name" onChange={nameHandler}/>
