@@ -17,6 +17,7 @@ nav{
     width: 100%;
     position:fixed;
     top:0px;
+    column-gap: 500px;
 }
 nav a{
     text-decoration: none;
@@ -33,6 +34,7 @@ img{
 nav ul{
     display:flex;
     gap: 15px;
+    padding-top: 20px;
 }
 nav ul li{
     list-style-type:none;
@@ -65,18 +67,33 @@ nav ul li{
     font-size: 22px;
     color: white;
 }
+.presentation-final:hover{
+    color: white
+}
 .first-button{
     background-color:#ff304a;
     border-radius: 10px;
     padding: 15px 20px;
-    width: 328px;
     font-size: 20px;
     color: white;
+    width: 300px;
+}
+.first-button:hover{
+    text-decoration: none;
+    color: white;
+    box-shadow: #1b1e28;
 }
 .presentation-final{
     color: white;
 }
 
+
+.our-clients{
+    text-align: center;
+    padding: 80px;
+    font-size: 60px;
+    color: white;
+}
 .our-services{
     text-align: center;
     padding-top: 100px;
@@ -90,7 +107,7 @@ nav ul li{
     font-size: 60px;
     text-align: center;
     width: 80%;
-    
+    padding-top: 50px;
 }
 .our-services p{
     color: white;
@@ -103,13 +120,14 @@ nav ul li{
     height:auto;
     justify-content:center;
 }
+
 .card-services{
     width: 295px;
     color: white;
     border-radius:30px;
     background-color:rgba(255, 255, 255, 0.37);
     border: 1px solid white;
-    margin: 72px 20px;
+    margin: 60px 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -142,13 +160,18 @@ nav ul li{
     height:auto;
     display:flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content:center;
+}
+.center-mini-cards{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .mini-card{
     width:50%;
     display:flex;
     align-items: center;
-    padding: 50px;
+    padding: 30px;
 }
 .mini-card img{
     width:130px;
@@ -239,10 +262,63 @@ nav ul li{
     width:25%;
     text-align: center;
 }
-.card-experience img{
-    width:192px;
+
+
+
+.img1{
+    width: 192px;
+    height:  127px;
+}
+
+.img2{
+    width: 129px;
     height: 127px;
 }
+
+.img3{
+    width:243px;
+    height: 130px;
+}
+
+.img4{
+    width:  161px;
+    height:  127px;
+}
+
+.img5{
+    width: 140px;
+    height:102px;
+}
+
+.img6{
+    width: 159px;
+    height: 130px;
+}
+.img7{
+    width: 129px;
+    height: 119px;
+}
+.img8{
+    width: 185px;
+    height: 124px;
+}
+.img9{
+    width: 140px;
+    height: 96px;
+}
+.img10{
+    width: 159px;
+    height: 128px;
+}
+.img11{
+    width: 129px;
+    height: 120px;
+}
+.img12{
+    width: 185px;
+    height: 119px;
+}
+
 .ourInfrastructure{
     font-size:60px;
     color: white;
@@ -266,8 +342,8 @@ nav ul li{
 .long-card h3{
     font-size:25px;
     color: white;
-    width:80%;
     text-align: center;
+    padding-top: 40px;
 }
 
 .form{
@@ -354,6 +430,7 @@ footer{
     align-items:center;
     column-gap: 80px;
 }
+
 .social{
     width:20px
 }
@@ -365,12 +442,26 @@ footer{
     display: flex;
     align-items: center;
 }
+.div-social a{
+    color:#b8becd
+}
+.footer-left{
+    display: flex;
+    
+}
+.footer-left p{
+    padding-top: 15px;
+}
+.footer-right a{
+    color:white
+}
 @media screen and (max-width: 683px) {
     body{
         position: absolute
     }
     nav{
-        height:100px
+        height:100px;
+        column-gap: 0px;
     }
     .presentation{
         padding-top: 150px;
@@ -388,18 +479,25 @@ footer{
     }
     .nave{visibility: hidden;}
     .our-services{
-        padding-top: 100px;
+        padding-top: 50px!important;
     }
     .card-services{
         width:80%;
-        padding: 10%;
+        padding: 4%;
+    }
+    .card-services p{
+        font-size: 20px;
+    }
+    .center-mini-cards{
+        display:flex;
+        justify-content: center;
     }
     .mini-cards{
         justify-content: center;
         row-gap:60px;
     }
     .mini-card{
-        width: 60%;
+        width: 80%;
         display:flex;
         flex-direction: column;
         row-gap:30px;
@@ -433,7 +531,11 @@ footer{
     } 
     .three-steps-card{
         width:80%;
-
+        padding: 40px;
+    }
+    .three-steps-card img{
+        width: 100px!important;
+        height: 100px!important;
     }
     .three-steps-card h3{
         font-size:35px;
@@ -447,10 +549,7 @@ footer{
         width: 150px;
         height: 150px;
     }
-    .industry-experience{
-        padding-top:100px;
-
-    }
+    
     .industry-experience h2{
         font-size:40px;
     }
@@ -458,12 +557,72 @@ footer{
         padding: 0px 20px;
     }
     .cards-experience{
-        padding-top: 100px;
         display:flex;
         flex-wrap: wrap;
         justify-content:center;
         row-gap:150px;
     }
+
+
+
+
+    .img1{
+    width: 275px !important;
+    height: 175px;
+}
+
+.img2{
+    width: 190px!important;
+    height: 175px;
+}
+
+.img3{
+    width:340px !important;
+    height: 175px ;
+}
+
+.img4{
+    width:  161px;
+    height:  127px;
+}
+
+.img5{
+    width: 215px!important;
+    height:102px;
+}
+
+.img6{
+    width: 250px!important;
+    height: 130px;
+}
+.img7{
+    width: 215px !important;
+    height: 175px;
+}
+.img8{
+    width: 300px !important;
+    height: 124px;
+}
+.img9{
+    width: 140px;
+    height: 96px;
+}
+.img10{
+    width: 159px;
+    height: 128px;
+}
+.img11{
+    width: 205px !important;
+    height: 175px;
+}
+.img12{
+    width: 300px !important;
+    height: 175px;
+}
+
+
+
+
     .card-experience{
         width: 60%;
     }
@@ -493,11 +652,6 @@ footer{
         width: 100%;
         padding: 5%;
     }
-    .fotos{
-        padding-left: 5%;
-        display: flex;
-        gap: 20px;
-    }
     .wn{
         font-weight: 700;
     }
@@ -510,13 +664,36 @@ footer{
         display: flex;
         flex-direction: column;
         align-items:center;
-        padding-top:100px;
-        padding-bottom: 100px;
+        
     }
     .ubication-center{
         border: 3px solid white;
         border-radius:10px;
+        display: flex;
+        flex-direction: column;
     }
+    .country{
+        padding: 30px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+    }
+    .div-social a{
+        color:#b8becd
+    }
+    .footer-left{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-right a{
+        color:white;
+        padding: 10px;
+    }
+
+    
     
   }
 

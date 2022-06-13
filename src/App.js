@@ -32,7 +32,7 @@ function App() {
   const send=async(e)=>{
     e.preventDefault();
     try{console.log("enviando informacion...")
-      await axios.post("https://whispering-depths-85783.herokuapp.com/enviar",{name,company,mail,number,message})
+      await axios.post("https://back-doble-mail.herokuapp.com/enviar",{name,company,mail,number,message})
       
     }
     catch(error){}
@@ -46,21 +46,23 @@ function App() {
     <div className="App">
       <nav>
         <a href="https://webleadsgroup.com/"><img src={require('./imagenes/logotipo.png')} alt="logo-webleads"/></a>
+        <div className="links">
         <ul>
             <li><a href="#home">HOME</a></li>
             <li><a href="#our-services">SERVICES</a></li>
             <li><a href="#form-id">CONTACT</a></li>
-        </ul>
+        </ul> </div>
       </nav>
-      <div className="presentation" id="home">
+      <div className="presentation" id="home" >
       <span>#WeAreWebLeads</span>
       <h1> Software Development Outsourcing <br/>Services </h1>
       <p> Hire In-Demand Skills, On-Demand TM Web. Software, Mobile,DevOps and BlockChain. </p>
       <a href="#form-id" className="first-button">SCHEDULE TIME TO TALK </a>
-      <a href="#" className="presentation-final"> Or, Use this form to share your requirements. Get guaranteed response within 8 Hrs. </a>
+      <a href="#" className="presentation-final"> Or, Use this form to share your requirements.<br/> Get guaranteed response within 8 Hrs. </a>
       </div>
 
-      <div className="our-services" id="our-services">
+
+      <div className="our-services" id="our-services" >
         <h2>Our Services</h2>
         <p> WebLeads helps you adapt your company's business processes so that you can focus on what really matters to you. you can focus on what really matters to you, thus facilitating the achievement of your goals, adding value to your customers, and increasing the productivity of your resources. </p>
       </div>
@@ -85,6 +87,7 @@ function App() {
         </div>
       </div>
       <div className="mini-cards">
+        <div className="center-mini-cards">
         <div className="mini-card">
         <img src={require("./imagenes/PHP.png")}/>
         <p> Hire developers deep expertise in LAMP, Laravel, Symfony, CodeIgniter, Yii, Zend, WordPress. Drupal or Magento. </p>
@@ -133,6 +136,7 @@ function App() {
         <img src={require("./imagenes/MOBILE.png")}/>
         <p> Hire developers with expertise in iOS, Android,Xamarin, Apache Cordova, PWA, React Native,Flutter, Ionic, and more. </p>
         </div>
+        </div>
       </div>
       <div className="three-steps">
       <div className="three-steps-text">
@@ -169,44 +173,74 @@ function App() {
 
       <div className="cards-experience">
       <div className="card-experience">
-      <img src={require("./imagenes/01.png")}/>
+      <img className="img1" src={require("./imagenes/01.png")}/>
+      </div>
+      
+      <div className="card-experience">
+      <img className="img3" src={require("./imagenes/03.png")}/>
       </div>
       <div className="card-experience">
-      <img src={require("./imagenes/02.png")}/>
+      <img className="img2" src={require("./imagenes/02.png")}/>
       </div>
       <div className="card-experience">
-      <img src={require("./imagenes/03.png")}/>
+      <img className="img4" src={require("./imagenes/04.png")}/>
       </div>
       <div className="card-experience">
-      <img src={require("./imagenes/04.png")}/>
+      <img className="img5" src={require("./imagenes/05.png")}/>
       </div>
       <div className="card-experience">
-      <img src={require("./imagenes/05.png")}/>
+      <img className="img6" src={require("./imagenes/07.png")}/>
       </div>
       <div className="card-experience">
-      <img src={require("./imagenes/06.png")}/>
+      <img className="img7" src={require("./imagenes/06.png")}/>
+      </div>
+      
+      <div className="card-experience">
+      <img className="img8" src={require("./imagenes/08.png")}/>
       </div>
       <div className="card-experience">
-      <img src={require("./imagenes/07.png")}/>
+      <img className="img9" src={require("./imagenes/09.png")}/>
       </div>
       <div className="card-experience">
-      <img src={require("./imagenes/08.png")}/>
+      <img className="img10" src={require("./imagenes/10.png")}/>
       </div>
       <div className="card-experience">
-      <img src={require("./imagenes/09.png")}/>
+      <img className="img11" src={require("./imagenes/11.png")}/>
       </div>
       <div className="card-experience">
-      <img src={require("./imagenes/10.png")}/>
-      </div>
-      <div className="card-experience">
-      <img src={require("./imagenes/11.png")}/>
-      </div>
-      <div className="card-experience">
-      <img src={require("./imagenes/12.png")}/>
+      <img className="img12" src={require("./imagenes/12.png")}/>
       </div>
       </div>
 
+
+
+      {/* <h2 className="our-clients">Our clients</h2>
+      <div id="carouselExampleSlidesOnly" style={{width: "100%",
+    display: "flex",
+    justifyContent: "center"}} className="carousel slide" data-ride="carousel">
+  <div className="carousel-inner" style={{width: "50%",display:"flex",padding:"50px"}}>
+    <div  className="carousel-item active">
+      <img  style={{width:"100%",height:"100px"}} className="d-block " src={require("./imagenes/mati.png")} alt="First slide"/>
+    </div>
+    <div className="carousel-item">
+    <img  style={{width:"100%",height:"100px"}} className="d-block " src={require("./imagenes/advanced.png")} alt="Second slide"/>
+    </div>
+    <div className="carousel-item">
+      <img style={{width:"100%",height:"100px"}} className="d-block " src={require("./imagenes/genesis.png")} alt="Third slide"/>
+    </div>
+    <div  className="carousel-item">
+      <img style={{width:"30%",margin:"0 auto"}} className="d-block " src={require("./imagenes/kinetic.png")} alt="Third slide"/>
+    </div>
+  </div>
+</div>  
+
+  */}
+
+
+
       <h2 className="ourInfrastructure">Our Infrastructure</h2>
+
+
 
       <div className="long-cards">
         <div className="long-card">
@@ -229,10 +263,6 @@ function App() {
         <p>Get Custom Solutions, Recommendations, Resumes, or, Estimates. Confidentiality &amp; Same Day Response Guaranteed! </p>
         <p className="wn">What’s next?</p>
         <p>One of our Account Managers will contact you shortly</p>
-        <div className="fotos">
-        <img src={require("./imagenes/imagenVendedor1.png")}/>
-        <img src={require("./imagenes/imagenVendedor2.png")}/>
-        </div>
         </div>
 
         <div className="form-right">
@@ -251,13 +281,13 @@ function App() {
       <div className="ubication">
         <div className="ubication-center">
         <div className="country">
-        <p> SANTIAGO, CHILE <br/> Av. Irarrázaval 3661,Of. 201 Ñuñoa, ZIP 7550000<br/> +56 2 2247-2156  </p>
+        <p> SANTIAGO, CHILE <br/> Av. Irarrázaval 3661,Of. 201 Ñuñoa, ZIP 7550000 </p>
         </div>
         <div className="country">
-        <p> FRISCO, USA <br/> 10601 Clarence Dr STE 250, Frisco, Texas, 75033 <br/> (945) 424-1743 </p>
+        <p> FRISCO, USA <br/> 10601 Clarence Dr STE 250, Frisco, Texas, 75033</p>
         </div>
         <div className="country">
-        <p> CÓRDOBA, ARGENTINA <br/> HUMBERTO PRIMO 630 <br/> CÓRDOBA CAPITAL X5000 <br/> +54 (351) 811-2258 </p>
+        <p> CÓRDOBA, ARGENTINA <br/> HUMBERTO PRIMO 630 <br/> CÓRDOBA CAPITAL X5000</p>
         </div>
         </div>
       </div>
@@ -267,12 +297,17 @@ function App() {
         <p>© 2022 WebLeads. All rights reserved</p> <div className="div-social"><a href="https://www.instagram.com/webleadsok/"><FaInstagramSquare className="social"/></a><a href="https://www.facebook.com/webleadsok"><FaFacebookF className="social"/></a><a href="https://ar.linkedin.com/company/webleadsok"><FaLinkedinIn className="social"/></a><a href="https://github.com/webleads-software"><FaGithubSquare className="social"/></a></div>
         </div>
         <div className="footer-right">
-        <a href=""> Terms &amp; Conditions</a>
+        <a href=""> Terms  &amp;  Conditions</a>
         |
         <a href="">Privacy Policy</a>
         </div>
         
       </footer>
+
+
+
+      
+
 
     </div>
   );
