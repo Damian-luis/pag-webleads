@@ -709,6 +709,7 @@ footer{
     .footer-left{
         display: flex;
         flex-direction: column;
+        row-gap: 40px;
     }
     .footer-right a{
         color:white;
