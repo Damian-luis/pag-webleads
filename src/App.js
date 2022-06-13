@@ -70,7 +70,7 @@ function App() {
       <a href="#" className="presentation-final"> Or, Use this form to share your requirements.<br/> Get guaranteed response within 8 Hrs. </a>
       </div>
 
-      {/*<div data-aos="zoom-in-left" className="navecita"><img src={require('./imagenes/nave.png')} alt="navecita"/></div> */}
+      <div  data-aos="fade-up" className="navecita"><img src={require('./imagenes/nave.png')} alt="navecita"/></div> 
 
       <div  data-aos="fade-up" className="our-services" id="our-services" >
         <h2>Our Services</h2>
@@ -98,15 +98,15 @@ function App() {
       </div>
       <div className="mini-cards">
         <div className="center-mini-cards">
-        <div  className="mini-card">
+        <div data-aos="flip-left" className="mini-card">
         <img src={require("./imagenes/PHP.png")}/>
         <p> Hire developers deep expertise in LAMP, Laravel, Symfony, CodeIgniter, Yii, Zend, WordPress. Drupal or Magento. </p>
         </div>
-        <div  className="mini-card">
+        <div data-aos="flip-left" className="mini-card">
         <img src={require("./imagenes/PYTHON.png")}/>
         <p> Get expertise in Core Python, Django, Flask, Microservices, Redis, AWS, Google Cloud, GraphQL, Hadoop, Hive and more. </p>
         </div>
-        <div  className="mini-card">
+        <div data-aos="flip-left" className="mini-card">
         <img src={require("./imagenes/NODE.png")}/>
         <p> Node.js is a go-to choice for developers looking to build real-time, scalable apps and collaborative tools. </p>
         </div>

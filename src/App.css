@@ -91,7 +91,18 @@ nav ul li{
 
 
 
-
+.navecita{
+    width:500px;
+    height: 500px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    z-index: -1;
+}
+.navecita img{
+    width: 100%;
+    height: 100%;
+}
 
 
 .our-clients{
@@ -483,7 +494,12 @@ footer{
         width:280px;
         font-size: 18px;
     }
-    .nave{visibility: hidden;}
+    .navecita{
+        position: relative;
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
+    }
     .our-services{
         padding-top: 50px!important;
     }
@@ -708,7 +724,12 @@ footer{
         padding-top: 50px;
         padding-bottom: 150px;
       }
-      .nave{visibility: hidden;}
+      .navecita{
+        position: relative;
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
+      }
       .mini-cards{
           display:flex;
           flex-direction: column;
