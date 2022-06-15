@@ -39,6 +39,7 @@ img{
 nav ul{
     display:flex;
     gap: 15px;
+    padding-top: 10px;
 }
 nav ul li{
     list-style-type:none;
@@ -708,7 +709,7 @@ footer{
     height: 175px;
 }
 .img12{
-    width: 300px !important;
+    width: 280px !important;
     height: 175px;
 }
 

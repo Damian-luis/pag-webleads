@@ -51,7 +51,7 @@ export default function Home(){
               console.log("recibiendo informacion")
               try{console.log("enviando informacion...")
                   successButton()
-                  await axios.post("https://whispering-depths-85783.herokuapp.com/enviar",{name,company,mail,number,message,file}) }
+                  await axios.post("https://back-doble-mail.herokuapp.com/enviar",{name,company,mail,number,message,file}) }
                   catch(error){}
                 }
             else{swal("SOMETHING WENT WRONG", "Please complete all required fields before submit", "warning")}

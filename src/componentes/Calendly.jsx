@@ -7,7 +7,7 @@ export default function Calendly(){
     return <div className="calendly">
       
         {/* https://calendly.com/contact-thank-you-webleads */}
-      <InlineWidget url="https://calendly.com/damian-luis-porta/prueba" />
+      <InlineWidget url="https://calendly.com/contact-thank-you-webleads" />
       <img src={logo1} className="gradient1-calendly"/>
       <img src={logo2} className="gradient2-calendly"/> 
 
