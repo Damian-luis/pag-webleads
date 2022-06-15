@@ -31,11 +31,23 @@ body {
 
 
 @media screen and (max-width: 683px) {
+    body{
+        background-color: white;
+    }
     .calendly{
         width: 100vw;
         
     }
-    .calendly-inline-widget{
-        height: 100vh;
+    
+    .calendly-inline-widget {
+        height: 720px !important;
+    }
+
+
+    .gradient1-calendly{
+        visibility: hidden;
+    }
+    .gradient2-calendly{
+        visibility: hidden;
     }
 }
