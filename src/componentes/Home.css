@@ -79,6 +79,8 @@ nav ul li{
     font-size: 20px;
     color: white;
     width: 300px;
+    text-decoration: none;
+    z-index: 500;
 }
 .first-button:hover{
     text-decoration: none;

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+     background-color: #1b1e28;
+     height: auto;
+}
+
+.gradient1-calendly{
+    position: absolute;
+    left: -260px;
+    top: 0px;
+    height: 100%;
+    width: 70%;
+    z-index: -100;
+}
+
+.gradient2-calendly{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%; 
+    width: 70%;
+    z-index: -100;
+}
+
+
+
+@media screen and (max-width: 683px) {
+    .calendly{
+        width: 100%;
+        
+    }
+}
