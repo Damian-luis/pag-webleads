@@ -31,18 +31,17 @@ body {
 
 
 @media screen and (max-width: 683px) {
-    body{
-        background-color: white;
-    }
+
     .calendly{
         width: 100vw;
         
     }
     
-    .calendly-inline-widget {
-        height: 720px !important;
-    }
 
+ 
+    .calendly-inline-widget {
+        min-height: 1050px;
+    }
 
     .gradient1-calendly{
         visibility: hidden;
