@@ -86,6 +86,7 @@ nav ul li{
     text-decoration: none;
     color: white;
     box-shadow: #1b1e28;
+    background-color: rgb(226, 26, 53)
 }
 .presentation-final{
     color: white;
@@ -783,7 +784,9 @@ footer{
         padding: 10px;
     }
 
-    
+    .carrusel-desktop{
+        display:none;
+    }
     
   }
 
@@ -846,4 +849,48 @@ footer{
       form button{
           width: 100px
       }
+
+      .carrusel{
+        display:none
+      }
+      .carrusel-desktop{
+        display: flex;
+    justify-content: center;
+    }
+    .carrusel-desktop-cards{
+        display: flex;
+        column-gap:25px;
+    
+    }
+    .carrusel-desktop-cards img{
+        width: 150px;
+    }
+    .kinetic{
+        width: 40px!important;
+        
+    }
+  }
+
+
+  @media screen and (min-width: 1000px) and (max-width:5000px){
+
+
+    .carrusel{
+        display:none
+      }
+    .carrusel-desktop{
+        display: flex;
+    justify-content: center;
+    }
+    .carrusel-desktop-cards{
+        display: flex;
+        column-gap: 40px;
+    
+    }
+    .carrusel-desktop-cards img{
+        width: 200px;
+    }
+    .kinetic{
+        width: 60px!important;
+    }
   }

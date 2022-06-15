@@ -12,7 +12,6 @@ import "aos/dist/aos.css"
 import { default as logo1 } from "../imagenes/Gradient01.svg";
 import { default as logo2 } from "../imagenes/Gradient02.svg";
 import { default as logo3 } from "../imagenes/Gradient03.svg";
-import Calendly from "./Calendly";
 import {Link} from "react-router-dom";
 export default function Home(){
     const [name,setName]=useState(false);
@@ -52,16 +51,16 @@ export default function Home(){
                   await axios.post("https://whispering-depths-85783.herokuapp.com/enviar",{name,company,mail,number,message}) }
                   catch(error){}
                 }
-            else{console.log("debe ingresar mensaje")}
+            else{swal("SOMETHING WENT WRONG", "Please complete all required fields before submit", "warning")}
           }
-          else{console.log("debe ingresar el nombre de su compañia ")}
+          else{swal("SOMETHING WENT WRONG", "Please complete all required fields before submit", "warning")}
         }
-        else{setText("debe ingresar un numero de telefono")}
+        else{swal("SOMETHING WENT WRONG", "Please complete all required fields before submit", "warning")}
     }
-    else{setText("debe ingresar un correo electronico")}
+    else{swal("SOMETHING WENT WRONG", "Please complete all required fields before submit", "warning")}
     }
     else{
-      setFormInfo(true)
+        swal("SOMETHING WENT WRONG", "Please complete all required fields before submit", "warning")
       //try{console.log("enviando informacion...")
       //await axios.post("https://whispering-depths-85783.herokuapp.com/enviar",{name,company,mail,number,message}) }
        //catch(error){}
@@ -261,28 +260,39 @@ export default function Home(){
 
 
 
-      {/* <h2 className="our-clients">Our clients</h2>
+       <h2 className="our-clients">Our clients</h2>
+       <div className="carrusel">
       <div id="carouselExampleSlidesOnly" style={{width: "100%",
     display: "flex",
     justifyContent: "center"}} className="carousel slide" data-ride="carousel">
   <div className="carousel-inner" style={{width: "50%",display:"flex",padding:"50px"}}>
     <div  className="carousel-item active">
-      <img  style={{width:"100%",height:"100px"}} className="d-block " src={require("./imagenes/mati.png")} alt="First slide"/>
+      <img  style={{width:"100%",height:"100px"}} className="d-block " src={require("../imagenes/mati.png")} alt="First slide"/>
     </div>
     <div className="carousel-item">
-    <img  style={{width:"100%",height:"100px"}} className="d-block " src={require("./imagenes/advanced.png")} alt="Second slide"/>
+    <img  style={{width:"100%",height:"100px"}} className="d-block " src={require("../imagenes/advanced.png")} alt="Second slide"/>
     </div>
     <div className="carousel-item">
-      <img style={{width:"100%",height:"100px"}} className="d-block " src={require("./imagenes/genesis.png")} alt="Third slide"/>
+      <img style={{width:"100%",height:"100px"}} className="d-block " src={require("../imagenes/genesis.png")} alt="Third slide"/>
     </div>
     <div  className="carousel-item">
-      <img style={{width:"30%",margin:"0 auto"}} className="d-block " src={require("./imagenes/kinetic.png")} alt="Third slide"/>
+      <img style={{width:"30%",margin:"0 auto"}} className="d-block " src={require("../imagenes/kinetic.png")} alt="Third slide"/>
     </div>
   </div>
 </div>  
 
-  */}
+</div>
 
+    <div className="carrusel-desktop">
+        <div className="carrusel-desktop-cards">
+            
+                <img src={require("../imagenes/advanced.png")}/>
+                <img src={require("../imagenes/mati.png")}/>
+                <img src={require("../imagenes/genesis.png")}/>
+                <img src={require("../imagenes/kinetic.png")} className="kinetic"/>
+            
+        </div>
+    </div>
 
 <img src={logo1} className="gradient4"/>
       <h2 className="ourInfrastructure">Our Infrastructure</h2>
@@ -321,7 +331,6 @@ export default function Home(){
             {/*setFormInfo.length > 1? <h4>{setText}</h4>: console.log("final")  */}
 
            
-{setFormInfo===true?<p>Inggee vales</p>:<p>Nad aui</p>}
             <p> Attach files Select files from your <span className="computer">Computer</span> or <span className="google-docs">Google Docs</span> or <span className="dropbox">Dropbox URLs</span></p>
             <button type="submit" className="first-button" >ENQUIRE NOW</button>
           </form>
