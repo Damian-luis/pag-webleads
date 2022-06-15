@@ -14,11 +14,12 @@ import { default as logo2 } from "../imagenes/Gradient02.svg";
 import { default as logo3 } from "../imagenes/Gradient03.svg";
 import {Link} from "react-router-dom";
 export default function Home(){
-    const [name,setName]=useState(false);
+  const [name,setName]=useState(false);
   const [company,setCompany]=useState(false);
   const [mail,setMail]=useState(false);
   const [message,setMessage]=useState(false);
   const [number,setNumber]=useState(false);
+  const [file,setFile]=useState(false);
   const [formInfo,setFormInfo]=useState(false);
   const [text,setText]=useState("");
   function nameHandler(e) {
@@ -36,7 +37,9 @@ export default function Home(){
   function numberHandler(e) {
     setNumber(e.target.value);
   }
-
+  function fileHandler(e) {
+    setFile(e.target.files);
+  }
   
   const send=async(e)=>{
     e.preventDefault();
@@ -48,7 +51,7 @@ export default function Home(){
               console.log("recibiendo informacion")
               try{console.log("enviando informacion...")
                   successButton()
-                  await axios.post("https://whispering-depths-85783.herokuapp.com/enviar",{name,company,mail,number,message}) }
+                  await axios.post("https://whispering-depths-85783.herokuapp.com/enviar",{name,company,mail,number,message,file}) }
                   catch(error){}
                 }
             else{swal("SOMETHING WENT WRONG", "Please complete all required fields before submit", "warning")}
@@ -331,7 +334,7 @@ export default function Home(){
             {/*setFormInfo.length > 1? <h4>{setText}</h4>: console.log("final")  */}
 
            
-            <p> Attach files Select files from your <span className="computer">Computer</span> or <span className="google-docs">Google Docs</span> or <span className="dropbox">Dropbox URLs</span></p>
+            <p> Attach files Select files from your <span className="computer"><label htmlFor="pdf">Computer<input id="pdf" type="file" className="hidden" onChange={fileHandler}/></label></span> or <span className="google-docs">Google Docs</span> or <span className="dropbox">Dropbox URLs</span></p>
             <button type="submit" className="first-button" >ENQUIRE NOW</button>
           </form>
 
