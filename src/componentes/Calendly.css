@@ -32,7 +32,7 @@ body {
 
 @media screen and (max-width: 683px) {
     .calendly{
-        width: 100%;
+        width: 100vw;
         
     }
 }
