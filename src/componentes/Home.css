@@ -93,6 +93,7 @@ nav ul li{
 }
 .presentation-final{
     color: white;
+    
 }
 
 
@@ -415,17 +416,22 @@ nav ul li{
     width: 50%;
     background:linear-gradient(180deg,#1b1e28,#2babf0 80%);
 }
+.form-text-left{
+    display:flex;
+    flex-direction:column;
+    padding: 25px;
+}
 .form-left h2{
     font-size: 35px;
     text-align: left;
-    margin: 20px;
+   
     width: 80%;
     color: white;
 }
 .form-left p{
     font-size: 20px;
     color: white;
-    margin: 20px;
+    
     width: 80%;
 }
 .form-left img{
@@ -453,7 +459,12 @@ form{
     text-decoration: none;
     z-index: 500;
 }
-
+.form-button:hover{
+    text-decoration: none;
+    color: white;
+    box-shadow: #1b1e28;
+    background-color: rgb(226, 26, 53)
+}
 form input{
     padding: 20px 5px;
     border-bottom: 1px solid #d0d0d0;
@@ -530,7 +541,9 @@ footer{
 }
 @media screen and (max-width: 683px) {
 
-
+.navecita{
+    display: none
+}
     
 .gradient1{
     position: absolute;
@@ -576,6 +589,9 @@ footer{
     .presentation{
         padding-top: 150px;
         row-gap: 40px;
+    }
+    .presentation-final{
+        text-align:start!important;
     }
     .presentation h1{
         font-size:60px
@@ -649,8 +665,9 @@ footer{
         padding: 40px;
     }
     .three-steps-card img{
-        width: 77px!important;
-        height: 77px!important;
+        width: 72px!important;
+        height: 72px!important;
+        padding-bottom: 10px;
     }
     .three-steps-card h3{
         font-size:35px;
@@ -762,10 +779,16 @@ footer{
     }
     .form{
         display:flex;
+        
     }
     .form-left{
         width: 100%;
         padding: 5%;
+    }
+    .form-center{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
     }
     .wn{
         font-weight: 700;
@@ -895,6 +918,14 @@ footer{
         width: 40px!important;
         
     }
+    .form-center{
+        width: 80%;
+    }
+    .form-left{
+        display:flex;
+        flex-direction:column;
+        padding: 25px;
+    }
   }
 
 
@@ -928,5 +959,13 @@ footer{
     }
     .advanced{
         width: 180px!important;
+    }
+    .form-left{
+        display:flex;
+        flex-direction:column;
+        padding: 25px;
+    }
+    .footer-right a{
+        padding: 10px;
     }
   }

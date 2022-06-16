@@ -219,7 +219,7 @@ export default function Home(){
 
       <div className="industry-experience">
       <Link to="/book-a-call" className="first-button">BOOK A CALL</Link>
-      <a href="#form-id" className="presentation-final"> Or, Use this form to tell us about your needs.</a>
+      <a href="/#form-id" className="presentation-final"> Or, Use this form to tell us about your needs.</a>
       <h2>Industry Experience</h2>
       <p>Our team is specialized in a wide array of industry verticals</p>
       </div>
@@ -324,10 +324,13 @@ export default function Home(){
       <div className="form" id="form-id">
         <div className="form-center">
         <div className="form-left">
+        <div className="form-tex-left">
         <h2>We’d Love To Hear From You </h2>
         <p>Get Custom Solutions, Recommendations, Resumes, or, Estimates. Confidentiality &amp; Same Day Response Guaranteed! </p>
         <p className="wn">What’s next?</p>
         <p>One of our Account Managers will contact you shortly</p>
+        </div>
+
         </div>
         <div className="form-right">
         <form onSubmit={send} id="form-reset">
@@ -376,7 +379,7 @@ export default function Home(){
         
       </footer>
       
-          <h1>testing</h1>
+       
 
       </div>
 }
