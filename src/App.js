@@ -21,6 +21,7 @@ function App() {
       
       <Route path="/" element={<Home/>} />
       <Route path="/book-a-call" element={<Calendly/>} />
+      <Route path="https://webleadsgroup.com/book-a-call" element={<Calendly/>} />
       </Routes>
     </div>
     

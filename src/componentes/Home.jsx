@@ -13,6 +13,7 @@ import { default as logo1 } from "../imagenes/Gradient01.svg";
 import { default as logo2 } from "../imagenes/Gradient02.svg";
 import { default as logo3 } from "../imagenes/Gradient03.svg";
 import {Link} from "react-router-dom";
+import $ from 'jquery';
 export default function Home(){
   const [name,setName]=useState(false);
   const [company,setCompany]=useState(false);
@@ -22,6 +23,9 @@ export default function Home(){
   const [file,setFile]=useState(false);
   const [formInfo,setFormInfo]=useState(false);
   const [text,setText]=useState("");
+
+ 
+
   function nameHandler(e) {
     setName(e.target.value);
   }
@@ -51,7 +55,7 @@ export default function Home(){
               console.log("recibiendo informacion")
               try{console.log("enviando informacion...")
                   successButton()
-                  await axios.post("https://back-doble-mail.herokuapp.com/enviar",{name,company,mail,number,message,file}) }
+                  await axios.post("http://localhost:8081/enviar",{name,company,mail,number,message,file}) }
                   catch(error){}
                 }
             else{swal("SOMETHING WENT WRONG", "Please complete all required fields before submit", "warning")}
@@ -289,9 +293,9 @@ export default function Home(){
     <div className="carrusel-desktop">
         <div className="carrusel-desktop-cards">
             
-                <img src={require("../imagenes/advanced.png")}/>
-                <img src={require("../imagenes/mati.png")}/>
-                <img src={require("../imagenes/genesis.png")}/>
+                <img src={require("../imagenes/advanced.png")} className="advanced"/>
+                <img src={require("../imagenes/mati.png")} className="mati"/>
+                <img src={require("../imagenes/genesis.png")} className="genesis"/>
                 <img src={require("../imagenes/kinetic.png")} className="kinetic"/>
             
         </div>
@@ -318,6 +322,7 @@ export default function Home(){
       </div>
 
       <div className="form" id="form-id">
+        <div className="form-center">
         <div className="form-left">
         <h2>We’d Love To Hear From You </h2>
         <p>Get Custom Solutions, Recommendations, Resumes, or, Estimates. Confidentiality &amp; Same Day Response Guaranteed! </p>
@@ -335,11 +340,12 @@ export default function Home(){
 
            
             <p> Attach files Select files from your <span className="computer"><label htmlFor="pdf">Computer<input id="pdf" type="file" className="hidden" onChange={fileHandler}/></label></span> or <span className="google-docs">Google Docs</span> or <span className="dropbox">Dropbox URLs</span></p>
-            <button type="submit" className="first-button" >ENQUIRE NOW</button>
+            <button type="submit" className="form-button" >ENQUIRE NOW</button>
           </form>
 
-          { 
-          }
+        
+
+        </div>
 
         </div>
       </div>
@@ -369,5 +375,7 @@ export default function Home(){
         </div>
         
       </footer>
+      
+      
       </div>
 }
