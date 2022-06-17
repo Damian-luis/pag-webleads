@@ -83,36 +83,9 @@ img{
     color:white;
 }
 
-.mini-cards{
-    height:auto;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:center;
-}
-.center-mini-cards{
-    width: 85%;
-    display: flex;
-    flex-wrap: wrap;
-}
-.mini-card{
-    width:50%;
-    display:flex;
-    align-items: center;
-    padding: 30px;
-}
-.mini-card img{
-    width:130px;
-    height:130px;
-    border:1px solid white;
-    object-fit: contain;
-    padding: 2rem;
-    border-radius:10px;
-}
-.mini-card p{
-    color:white;
-    text-align:left;
-    padding-left: 5%;
-}
+
+
+
 .three-steps{
     padding-top:50px;
     padding-bottom:50px;
@@ -487,24 +460,49 @@ footer{
 
 
 
+.mini-cards{
+    display:flex;
+    justify-content: center;
+    row-gap:60px;
+    
+}
     .center-mini-cards{
         display:flex;
-        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
     }
-    .mini-cards{
-        justify-content: center;
-        row-gap:60px;
-    }
+    
     .mini-card{
         width: 80%;
         display:flex;
         flex-direction: column;
         row-gap:30px;
+        padding: 30px;
     }
     .mini-card p{
         text-align: center;
-        font-size: 25px;
+        font-size: 15px;
+        color: white;
     }
+    
+   
+    .mini-card img{
+        width:100px;
+        height:100px;
+        border:1px solid white;
+        object-fit: contain;
+        padding: 2rem;
+        border-radius:10px;
+        margin: 0 auto;
+    }
+    
+    
+
+
+
+
+
     .three-steps{
         display:flex;
         flex-direction: column;
@@ -875,4 +873,41 @@ footer{
         width: 70px;
         height: 70px;
     }
+
+
+
+
+
+
+    .mini-cards{
+    height:auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.center-mini-cards{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mini-card{
+    width:50%;
+    display:flex;
+    align-items: center;
+    padding: 30px;
+}
+.mini-card img{
+    width:130px;
+    height:130px;
+    border:1px solid white;
+    object-fit: contain;
+    padding: 2rem;
+    border-radius:10px;
+}
+.mini-card p{
+    color:white;
+    text-align:left;
+    padding-left: 5%;
+}
+
   }
