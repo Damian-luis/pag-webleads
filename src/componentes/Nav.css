@@ -1,14 +1,16 @@
 
 
 @media screen and (max-width: 683px) {
+    /*NAV */
     nav{
-        height: 100px;
+        height: 70px;
         display: flex;
         justify-content: space-around;
         align-items:center;
         width: 100%;
         background-color: #272b39;
     }
+    
     nav a{
         text-decoration: none;
         color:#b8becd
@@ -31,13 +33,19 @@
     body {width: 100%;}
     nav a img{
         width: 100px;
-        height: 30px;
+        height: 25px;
     }
     li a{
         font-size: 10px;
     }
     
+
+
+
+  
     
+
+   
 }
 
 
