@@ -359,6 +359,7 @@ footer{
     font-weight: 700;
     line-height: 1;
     color: white;
+    padding: 20px 0px;
 }
 
 .presentation span{
@@ -369,6 +370,7 @@ footer{
 .presentation p{
     font-size: 15px;
     color: white;
+    width:60%
 }
 .presentation-final:hover{
     color: white
@@ -377,9 +379,9 @@ footer{
     background-color:#ff304a;
     border-radius: 10px;
     padding: 15px 20px;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
-    width: 300px;
+    width: 230px;
     text-decoration: none;
     z-index: 500;
 }
@@ -392,7 +394,7 @@ footer{
 .presentation-final{
     color: white;
     font-size: 15px;
-    
+    width: 80%;
 }
 .navecita{
     display: none
@@ -438,10 +440,7 @@ footer{
    
     
 
-    .first-button{
-        width:280px;
-        font-size: 18px;
-    }
+    
     .navecita{
         position: relative;
         width: 50%;
