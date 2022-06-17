@@ -87,70 +87,7 @@ img{
 
 
 
-.cards-experience{
-    display:flex;
-    flex-wrap: wrap;
-    margin-top: 150px;
-    
-    row-gap:100px;
-}
-.card-experience{
-    width:25%;
-    text-align: center;
-}
-.img1{
-    width: 192px;
-    height:  127px;
-}
 
-.img2{
-    width: 129px;
-    height: 127px;
-}
-
-.img3{
-    width:243px;
-    height: 130px;
-}
-
-.img4{
-    width:  161px;
-    height:  127px;
-}
-
-.img5{
-    width: 140px;
-    height:102px;
-}
-
-.img6{
-    width: 159px;
-    height: 130px;
-}
-.img7{
-    width: 129px;
-    height: 119px;
-}
-.img8{
-    width: 185px;
-    height: 124px;
-}
-.img9{
-    width: 140px;
-    height: 96px;
-}
-.img10{
-    width: 159px;
-    height: 128px;
-}
-.img11{
-    width: 129px;
-    height: 120px;
-}
-.img12{
-    width: 185px;
-    height: 119px;
-}
 
 .ourInfrastructure{
     font-size:60px;
@@ -536,77 +473,78 @@ footer{
     .cards-experience{
         display:flex;
         flex-wrap: wrap;
+        margin-top: 150px;
         justify-content:center;
-        row-gap:150px;
+        
     }
-
-
-
-
-    .img1{
-    width: 275px !important;
-    height: 175px;
-}
-
-.img2{
-    width: 190px!important;
-    height: 175px;
-}
-
-.img3{
-    width:200px !important;
-    height: 175px ;
-}
-
-.img4{
-    width:  161px;
-    height:  127px;
-}
-
-.img5{
-    width: 215px!important;
-    height:102px;
-}
-
-.img6{
-    width: 250px!important;
-    height: 130px;
-}
-.img7{
-    width: 215px !important;
-    height: 175px;
-}
-.img8{
-    width: 200px !important;
-    height: 124px;
-}
-.img9{
-    width: 140px;
-    height: 96px;
-}
-.img10{
-    width: 159px;
-    height: 128px;
-}
-.img11{
-    width: 205px !important;
-    height: 175px;
-}
-.img12{
-    width: 280px !important;
-    height: 175px;
-}
-
-
-
-
+    .cards-experience-center{
+        display: flex;
+        flex-direction: column;
+        row-gap:100px;
+        align-items: center;
+    }
     .card-experience{
-        width: 60%;
+        width:100%;
+        text-align: center;
     }
-    .card-experience img{
-        width: 250px;
-        height: 175px;
+    .img1{
+        width: 192px;
+        height:  127px;
     }
+    
+    .img2{
+        width: 129px;
+        height: 127px;
+    }
+    
+    .img3{
+        width:243px;
+        height: 130px;
+    }
+    
+    .img4{
+        width:  161px;
+        height:  127px;
+    }
+    
+    .img5{
+        width: 140px;
+        height:102px;
+    }
+    
+    .img6{
+        width: 159px;
+        height: 130px;
+    }
+    .img7{
+        width: 129px;
+        height: 119px;
+    }
+    .img8{
+        width: 185px;
+        height: 124px;
+    }
+    .img9{
+        width: 140px;
+        height: 96px;
+    }
+    .img10{
+        width: 159px;
+        height: 128px;
+    }
+    .img11{
+        width: 129px;
+        height: 120px;
+    }
+    .img12{
+        width: 185px;
+        height: 119px;
+    }
+
+
+    
+
+   
     .long-cards{
         display: flex;
         flex-direction: column;
@@ -966,6 +904,78 @@ footer{
     font-size:25px;
     color: white;
     text-align: center;
+}
+
+
+
+
+
+
+
+
+.cards-experience{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    
+    row-gap:100px;
+}
+.card-experience{
+    width:25%;
+    text-align: center;
+}
+.img1{
+    width: 192px;
+    height:  127px;
+}
+
+.img2{
+    width: 129px;
+    height: 127px;
+}
+
+.img3{
+    width:243px;
+    height: 130px;
+}
+
+.img4{
+    width:  161px;
+    height:  127px;
+}
+
+.img5{
+    width: 140px;
+    height:102px;
+}
+
+.img6{
+    width: 159px;
+    height: 130px;
+}
+.img7{
+    width: 129px;
+    height: 119px;
+}
+.img8{
+    width: 185px;
+    height: 124px;
+}
+.img9{
+    width: 140px;
+    height: 96px;
+}
+.img10{
+    width: 159px;
+    height: 128px;
+}
+.img11{
+    width: 129px;
+    height: 120px;
+}
+.img12{
+    width: 185px;
+    height: 119px;
 }
 
   }

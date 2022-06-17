@@ -178,6 +178,7 @@ export default function Home(){
 
 
       <div className="cards-experience">
+        <div className="cards-experience-center">
       <div data-aos="zoom-in" className="card-experience">
       <img className="img1" src={require("../imagenes/01.png")}/>
       </div>
@@ -215,6 +216,7 @@ export default function Home(){
       </div>
       <div data-aos="zoom-in" className="card-experience">
       <img className="img12" src={require("../imagenes/12.png")}/>
+      </div>
       </div>
       </div>
 
