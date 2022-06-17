@@ -96,25 +96,7 @@ img{
     padding: 20px;
 }
 
-.long-cards{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-bottom: 100px;
-}
-.long-card{
-    width: 342px;
-}
-.long-card img{
-    width: 342px;
-    height: 488px;
-}
-.long-card h3{
-    font-size:25px;
-    color: white;
-    text-align: center;
-    padding-top: 40px;
-}
+
 
 
 
@@ -546,19 +528,24 @@ footer{
 
    
     .long-cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap:100px;
-        padding-bottom: 150px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 100px;
+        row-gap:50px
     }
     .long-card{
-        justify-content:center;
+        width: 60%;
+    }
+    .long-card img{
+        width: 100%;
+        height: 350px;
     }
     .long-card h3{
-        width: 100%;
+        font-size:25px;
+        color: white;
         text-align: center;
-        padding-top:30px;
+        padding-top: 40px;
     }
     
     
@@ -976,6 +963,32 @@ footer{
 .img12{
     width: 185px;
     height: 119px;
+}
+
+
+
+
+.ourInfrastructure{
+    width: 80%;
+}
+.long-cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+.long-card{
+    width: 342px;
+}
+.long-card img{
+    width: 342px;
+    height: 488px;
+}
+.long-card h3{
+    font-size:25px;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
 }
 
   }
