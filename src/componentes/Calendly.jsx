@@ -3,8 +3,19 @@ import { InlineWidget } from "react-calendly";
 import { default as logo1 } from "../imagenes/Gradient01.svg";
 import { default as logo2 } from "../imagenes/Gradient02.svg";
 import "./Calendly.css"
+
+import "./Home.css"
 export default function Calendly(){
-    return <div className="calendly">
+    return <>
+    
+    <div className="calendly-text">
+      <h2>Please choose the best day for you </h2>
+    </div>
+    
+    
+    <div className="calendly">
+      
+
       
       
 
@@ -21,6 +32,7 @@ export default function Calendly(){
 
 
     </div>
+    </>
 }
 
 

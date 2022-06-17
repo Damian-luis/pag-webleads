@@ -16,8 +16,9 @@ nav{
     justify-content:space-around;
     align-items:center;
     height:77.14px;
+    
     width: 100%;
-    position:fixed;
+    position:sticky;
     top:0px;
     column-gap: 500px;
     z-index: 5000;
