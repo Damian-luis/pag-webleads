@@ -132,11 +132,13 @@ export default function Home(){
         </div>
         </div>
       </div>
+
+
       <div className="three-steps">
       
       <div  className="three-steps-text">
       <Link to="/book-a-call" className="first-button">SCHEDULE TIME TO TALK</Link>
-      <Link to="/contact-us" className="presentation-final"> Or, Use this form to share your requirements. Get guaranteed response within 8 Hrs. </Link>
+      <Link to="/contact-us" className="presentation-final-center"> Or, Use this form to share your requirements. Get guaranteed response within 8 Hrs. </Link>
       
       <h2 data-aos="flip-down">3 Steps To Hire Your Remote Developer</h2>
       <img src={require("../imagenes/linea.png")}/>
@@ -160,12 +162,20 @@ export default function Home(){
       </div>
       </div>
 
+
+
+
+
       <div className="industry-experience">
       <Link to="/book-a-call" className="first-button">BOOK A CALL</Link>
       <Link to="/contact-us" className="presentation-final"> Or, Use this form to tell us about your needs.</Link>
       <h2>Industry Experience</h2>
       <p>Our team is specialized in a wide array of industry verticals</p>
       </div>
+
+
+
+
 
       <div className="cards-experience">
       <div data-aos="zoom-in" className="card-experience">

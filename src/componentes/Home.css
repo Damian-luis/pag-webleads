@@ -86,71 +86,7 @@ img{
 
 
 
-.three-steps{
-    padding-top:50px;
-    padding-bottom:50px;
-}
-.three-steps-text{
-    display:flex;
-    flex-direction:column;
-    row-gap:50px;
-    align-items:center;
-    
-}
-.three-steps-text h2{
-    font-size:60px;
-    color:white;
-    text-align:center;
-}
-.three-steps-text img{
-    width:40%;
-}
-.three-steps-cards{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    margin: 50px;
-}
-.three-steps-card{
-    width:295px;
-    background-color:hsla(0,0%,100%,.37);
-    padding:20px;
-    text-align:center;
-    border-radius:30px;
-    border: 1px solid white;
-}
-.three-steps-card img{
-    width: 77px;
-    height: 77px;
-}
-.three-steps-card h3{
-    font-size:28px;
-    text-align: center;
-    color: white;
-}
-.three-steps-card p{
-    text-align: center;
-    color: white;
-}
-.industry-experience{
-    display:flex;
-    flex-direction: column;
-    row-gap: 50px;
-    align-items:center;
-}
-.industry-experience a{
-    text-align: center;
-}
-.industry-experience h2{
-    font-size:60px;
-    text-align: center;
-    color: white;
-}
-.industry-experience p{
-    font-size:25px;
-    color: white;
-    text-align: center;
-}
+
 .cards-experience{
     display:flex;
     flex-wrap: wrap;
@@ -507,50 +443,96 @@ footer{
         display:flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 100px;
+        padding-top: 80px;
     }
     
     .three-steps-text{
         width: 80%;
-        row-gap:80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap:40px;
     }
-    
+    .three-steps-text h2{
+        font-size:30px;
+        text-align: center;
+        color: white;
+    }
+    .presentation-final-center{
+        text-align: center;
+        width: 80%;
+        color: white;
+    }
     .three-steps-text img{
         width:80%;
         height: 20px;
     }
+
+
     .three-steps-cards{
-        padding-top: 100px;
-        row-gap:150px;
+        padding: 70px 0px;
+        row-gap:100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     } 
     .three-steps-card{
         width:80%;
-        padding: 40px;
-    }
-    .three-steps-card img{
-        width: 72px!important;
-        height: 72px!important;
-        padding-bottom: 10px;
-    }
-    .three-steps-card h3{
-        font-size:35px;
         
-    }
-    .three-steps-card p{
-        font-size:25px;
-        
-    }
-    .three-steps-card img{
-        width: 150px;
-        height: 150px;
+        background-color: hsla(0,0%,100%,.37);
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    width: 60%;
     }
     
+    .three-steps-card h3{
+        font-size:20px;
+        color:white;
+    }
+    .three-steps-card p{
+        font-size:18px;
+        color: white;
+    }
+    .three-steps-card img{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    
+
+
+
+
+
+    .industry-experience{
+        display:flex;
+        flex-direction: column;
+        row-gap: 30px;
+        align-items:center;
+    }
+    .industry-experience a{
+        text-align: center;
+    }
     .industry-experience h2{
         font-size:40px;
+        width: 80%;
+        text-align: center;
+        color: white;
     }
     .industry-experience p{
-        padding: 0px 20px;
+        font-size:15px;
+        color: white;
+        text-align: center;
+        width: 80%;
     }
+
+
+
+
+
+
     .cards-experience{
         display:flex;
         flex-wrap: wrap;
@@ -908,6 +890,82 @@ footer{
     color:white;
     text-align:left;
     padding-left: 5%;
+}
+
+
+
+
+
+
+.three-steps{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.three-steps-text{
+    display:flex;
+    flex-direction:column;
+    row-gap:50px;
+    align-items:center;
+    
+}
+.three-steps-text h2{
+    font-size:60px;
+    color:white;
+    text-align:center;
+}
+.three-steps-text img{
+    width:40%;
+}
+.three-steps-cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin: 50px;
+}
+.three-steps-card{
+    width:295px;
+    background-color:hsla(0,0%,100%,.37);
+    padding:20px;
+    text-align:center;
+    border-radius:30px;
+    border: 1px solid white;
+}
+.three-steps-card img{
+    width: 77px;
+    height: 77px;
+}
+.three-steps-card h3{
+    font-size:28px;
+    text-align: center;
+    color: white;
+}
+.three-steps-card p{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+.industry-experience{
+    display:flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items:center;
+}
+.industry-experience a{
+    text-align: center;
+}
+.industry-experience h2{
+    font-size:60px;
+    text-align: center;
+    color: white;
+}
+.industry-experience p{
+    font-size:25px;
+    color: white;
+    text-align: center;
 }
 
   }
