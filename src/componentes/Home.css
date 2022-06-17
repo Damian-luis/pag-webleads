@@ -20,25 +20,25 @@ img{
 
 .presentation{
     padding-top: 20px;
-    padding-left: 6%;
+    
     width:60%;
     display:flex;
     flex-direction:column;
-    margin: 15px 20px;
+    
     row-gap: 25px;
 }
-
+.presentation h1{
+   
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+}
 .presentation span{
     color:white;
     font-size: 20px;
     font-weight: 400;
 }
-.presentation h1{
-    font-size: 75px;
-    font-weight: 700;
-    line-height: 1;
-    color: white;
-}
+
 .presentation p{
     font-size: 22px;
     color: white;
@@ -346,7 +346,7 @@ img{
     font-size:60px;
     color: white;
     text-align: center;
-    padding: 100px;
+    padding: 20px;
 }
 
 .long-cards{
@@ -426,7 +426,13 @@ footer{
     color:white
 }
 @media screen and (max-width: 683px) {
-
+.presentation{
+    width:100%;
+    
+}
+.presentation h1{
+    font-size:50px!important;
+}
 .navecita{
     display: none
 }
@@ -687,8 +693,8 @@ footer{
     
   }
 
-  @media screen and (min-width: 683px) and (max-width:1000px){
-    
+  @media screen and (min-width: 684px) and (max-width:1000px){
+   
       .text{
         padding-top: 50px;
         padding-bottom: 150px;
@@ -778,3 +784,9 @@ footer{
   }
 
 
+  @media screen and (min-width: 1000px) and (max-width:5000px){
+
+    .presentation h1{
+        font-size:  60px;
+    }
+  }

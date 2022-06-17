@@ -18,9 +18,10 @@ export default function Home(){
 
     return <>
 
-    <Nav/>
+   
     
-      <div data-aos="zoom-in" className="presentation" id="home" >
+      
+    <div data-aos="zoom-in" className="presentation" id="home" >
       <span>#WeAreWebLeads</span>
       <h1> Software Development Outsourcing <br/>Services </h1>
       <p> Hire In-Demand Skills, On-Demand TM Web. Software, Mobile,DevOps and BlockChain. </p>
@@ -31,6 +32,10 @@ export default function Home(){
       </div>
 
       <div  data-aos="fade-up" className="navecita"><img src={require('../imagenes/nave.png')} alt="navecita"/></div> 
+
+
+
+
 <img src={logo1} className="gradient1"/>
 
       <div  data-aos="fade-up" className="our-services" id="our-services" >
@@ -223,8 +228,9 @@ export default function Home(){
     </div>
 
 <img src={logo1} className="gradient4"/>
-      <h2 className="ourInfrastructure">Our Infrastructure</h2>
-
+<div className="ourInfrastructure">
+      <h2 className="ourInfrastructure-text">Our Infrastructure</h2>
+      </div>
       
 
       <div className="long-cards">
@@ -242,7 +248,6 @@ export default function Home(){
         </div>
       </div>
 
-      
 
       
       

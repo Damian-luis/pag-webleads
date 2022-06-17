@@ -24,7 +24,7 @@ function App() {
     <div className="App">
       <ScrollToTop/>
       
-      
+      <Nav/>
       <Routes>
       
       
@@ -40,7 +40,7 @@ function App() {
       
       
       </Routes>
-      <Footer/>
+     <Footer/>
     </div>
     
     

@@ -26,7 +26,17 @@
         list-style-type:none;
         color: #b8becd;
         font-family: DM Sans,sans-serif;
+    } 
+
+    body {width: 100%;}
+    nav a img{
+        width: 100px;
+        height: 30px;
     }
+    li a{
+        font-size: 10px;
+    }
+    
     
 }
 
@@ -68,6 +78,9 @@
     .presentation{
         padding-top: 150px;
         row-gap: 40px;
-    }
+    }  
+
+
+   
     
 }

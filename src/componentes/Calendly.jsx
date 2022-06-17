@@ -6,7 +6,7 @@ import "./Calendly.css";
 import Nav from "./Nav";
 export default function Calendly(){
     return <>
-    <Nav/>
+    
     <div className="calendly-text">
       <h2>Please choose the best day for you </h2>
     </div>
