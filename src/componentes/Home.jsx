@@ -42,13 +42,21 @@ export default function Home(){
         <h2>Our Services</h2>
         <p> WebLeads helps you adapt your company's business processes so that you can focus on what really matters to you. you can focus on what really matters to you, thus facilitating the achievement of your goals, adding value to your customers, and increasing the productivity of your resources. </p>
       </div>
+
+
+
+
+
+
       <div data-aos="fade-up" className="cards-services">
+        <div className="card-services-center">
         <div className="card-services">
           <img src={require("../imagenes/icon1.png")}/>
           <h3>Software Development</h3>
           <p> We are an award-winning offshore web development company specializing in creating custom, scalable and secure software for various industries. With expertise in UI/UX, Mobile, SaaS, Web &amp; Cloud, we are your One-Stop Solution For All Your Software Design, Development, And Support Requirements. </p>
         </div>
         <div className="card-services">
+        
         <img src={require("../imagenes/icon2.png")}/>
         <h3>Staff Augmentation</h3>
         <p> Looking for software engineers with a specific skill set to fill talent gaps? Our IT staff augmentation company can help you strike a perfect balance between project progress and cost-effectiveness. Build your team up and down with ease based on the current development needs. </p>
@@ -59,10 +67,19 @@ export default function Home(){
         <p> Our developers build native or hybrid apps for iOS and Android using the latest tech stack. We have expertise in fintech, edtech, healthcare, streaming industries, and more. Hire developers with expertise in iOS, Android, Xamarin, Apache Cordova, PWA, React Native, Flutter, Ionic, and more. </p>
         </div>
         <img src={logo2} className="gradient2"/>
+
+
+        
         <div className="text">
           <h2> Build Your Dedicated Team With Our Top Tech Skills </h2>
         </div>
+        </div>
       </div>
+
+
+
+
+      
       <div className="mini-cards">
         <div className="center-mini-cards">
         <div data-aos="flip-left" className="mini-card">

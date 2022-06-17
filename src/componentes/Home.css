@@ -75,9 +75,7 @@ img{
 }
 
 
-.text{
-    padding: 80px;
-}
+
 .text h2{
     font-size: 60px;
    
@@ -401,8 +399,6 @@ footer{
     width: 80%;
 }
 
-
-
 .navecita{
     display: none
 }
@@ -441,27 +437,56 @@ footer{
 }
 
 
-    body{
-        position: absolute
-    }
-   
-    
 
+.cards-services{
+    height:auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card-services-center{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap:30px;
+}
+.card-services h3{
+    font-size:18px
+}
+.card-services{
+    width: 100%;
+    color: white;
+    border-radius:30px;
+    background-color:rgba(255, 255, 255, 0.37);
+    border: 1px solid white;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap:5px;
+}
+.card-services img{
+    width: 50px;
+    height: 50px;
+}
+.card-services p{
+        font-size: 13px;
     
-    .navecita{
-        position: relative;
-        width: 50%;
-        height: 50%;
-        margin: 0 auto;
-    }
-    
-    .card-services{
-        width:80%;
-       
-    }
-    .card-services p{
-        font-size: 20px;
-    }
+}
+
+
+.text{
+    width: 100%;
+    padding: 20px;
+}
+.text h2{
+    font-size:40px;
+}
+
+
+
     .center-mini-cards{
         display:flex;
         justify-content: center;
@@ -812,6 +837,8 @@ footer{
         font-size: 24px;
         width: 80%;
     }
+
+
 
 
 
