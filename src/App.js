@@ -5,6 +5,7 @@ import Form from "./componentes/Form";
 import Nav from "./componentes/Nav";
 import Footer from "./componentes/Footer";
 import ScrollToTop from "./componentes/ScrollToTop";
+import "./componentes/Nav.css"
 import {
   Switch,
   Route,
@@ -22,7 +23,7 @@ function App() {
     
     <div className="App">
       <ScrollToTop/>
-      <Nav/>
+      
       
       <Routes>
       
@@ -34,7 +35,7 @@ function App() {
       <Route path="/" element={<Home/>} />
       <Route path="/book-a-call" element={<Calendly/>} />
       <Route path="/contact-us" element={<Form/>} />
-      
+    
       {/*<Route path="https://webleadsgroup.com/book-a-call" element={<Calendly/>} />  */}
       
       

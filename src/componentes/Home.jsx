@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Home.css";
-import { useState,useEffect } from "react";
-
+import { useEffect } from "react";
+import Nav from "./Nav";
 import Aos from "aos";
 import "aos/dist/aos.css"
 import { default as logo1 } from "../imagenes/Gradient01.svg";
@@ -10,22 +10,15 @@ import { default as logo3 } from "../imagenes/Gradient03.svg";
 import {Link} from "react-router-dom";
 export default function Home(){
 
-
- 
-
-
-  
-  
-  
-
-
-  useEffect(() => {
+ useEffect(() => {
     Aos.init({duration:1000})
   },[]);
 
 
 
-    return <div>
+    return <>
+
+    <Nav/>
     
       <div data-aos="zoom-in" className="presentation" id="home" >
       <span>#WeAreWebLeads</span>
@@ -254,8 +247,8 @@ export default function Home(){
       
       
       
-      
+      </>
        
 
-      </div>
+      
 }

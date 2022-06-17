@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react"
 import axios from "axios";
 import swal from "sweetalert";
+import Nav from "./Nav";
 export default function Form(){
 
     //estados del formulario
@@ -85,6 +86,7 @@ export default function Form(){
 
     return <>
     
+    <Nav/>
 
 <div className="form" id="form-id">
         <div className="form-center">
@@ -123,7 +125,7 @@ export default function Form(){
 
 
 
-      {/*Section Ubicacion */}
+      
 
       <div className="ubication">
         <div className="ubication-center">

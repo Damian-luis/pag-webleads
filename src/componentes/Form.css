@@ -1,0 +1,128 @@
+
+.form{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.form-center{
+    display:flex;
+    width: 60%;
+}
+
+#form-reset{
+    row-gap:5px
+}
+.form-left{
+    width: 50%;
+    background:linear-gradient(180deg,#1b1e28,#2babf0 80%);
+}
+.form-text-left{
+    display:flex;
+    flex-direction:column;
+    padding: 25px;
+}
+.form-left h2{
+    font-size: 35px;
+    text-align: left;
+   
+    width: 80%;
+    color: white;
+}
+.form-left p{
+    font-size: 20px;
+    color: white;
+    
+    width: 80%;
+}
+.form-left img{
+    width: 67.8px; height:67.8px;
+}
+.form-right{
+    width: 50%;
+    background-color: white;
+    padding: 15px 30px;
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.form-button{
+    background-color:#ff304a;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    width: 200px;
+    text-decoration: none;
+    z-index: 500;
+}
+.form-button:hover{
+    text-decoration: none;
+    color: white;
+    box-shadow: #1b1e28;
+    background-color: rgb(226, 26, 53)
+}
+form input{
+    padding: 20px 5px;
+    border-bottom: 1px solid #d0d0d0;
+    border:none;
+}
+form textarea{
+    padding: 5px 5px;
+    border-bottom: 1px solid #d0d0d0;
+    border:none;
+}
+.computer{
+    color: rgb(255, 48, 74); border-bottom: 1px solid rgb(255, 48, 74);
+}
+.google-docs{
+    color: rgb(43, 171, 240); border-bottom: 1px solid rgb(43, 171, 240)
+}
+.dropbox{
+    color: rgb(255, 204, 1); border-bottom: 1px solid rgb(255, 204, 1);
+}
+
+
+
+
+@media screen and (max-width: 683px) {
+
+
+    .form-left{
+        width: 100%;
+        padding: 5%;
+    }
+    .form-center{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+    }
+    .wn{
+        font-weight: 700;
+    }
+    .form-right{
+        width: 100%;
+        padding: 50px;
+    }
+    
+    .ubication{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        
+    }
+    .ubication-center{
+        border: 3px solid white;
+        border-radius:10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .country{
+        padding: 30px;
+    }
+
+}

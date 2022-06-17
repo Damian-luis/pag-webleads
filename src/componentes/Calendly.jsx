@@ -2,12 +2,11 @@ import React from "react";
 import { InlineWidget } from "react-calendly";
 import { default as logo1 } from "../imagenes/Gradient01.svg";
 import { default as logo2 } from "../imagenes/Gradient02.svg";
-import "./Calendly.css"
-
-import "./Home.css"
+import "./Calendly.css";
+import Nav from "./Nav";
 export default function Calendly(){
     return <>
-    
+    <Nav/>
     <div className="calendly-text">
       <h2>Please choose the best day for you </h2>
     </div>

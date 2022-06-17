@@ -28,7 +28,11 @@ body {
     z-index: -100;
 }
 
-
+.calendly-text h2{
+    color:white;
+    font-size: 50px;
+    font-weight: 700;
+}
 
 @media screen and (max-width: 683px) {
 
