@@ -140,38 +140,7 @@ img{
     font-size: 24px;
     width: 80%;
 }
-.cards-services{
-    display:flex;
-    flex-wrap: wrap;
-    height:auto;
-    justify-content:center;
-}
 
-.card-services{
-    width: 295px;
-    color: white;
-    border-radius:30px;
-    background-color:rgba(255, 255, 255, 0.37);
-    border: 1px solid white;
-    margin: 60px 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap:20px;
-}
-.card-services h3 {
-    font-size:28px;
-    text-align: center;
-}
-.card-services p{
-    
-    text-align: center;
-}
-.card-services img{
-    width: 70px;
-    height: 70px;
-}
 .text{
     padding: 80px;
 }
@@ -500,7 +469,7 @@ footer{
     }
     .card-services{
         width:80%;
-        padding: 4%;
+       
     }
     .card-services p{
         font-size: 20px;
@@ -788,5 +757,37 @@ footer{
 
     .presentation h1{
         font-size:  60px;
+    }
+    .cards-services{
+        display:flex;
+        flex-wrap: wrap;
+        height:auto;
+        justify-content:center;
+    }
+    
+    .card-services{
+        width: 295px;
+        color: white;
+        border-radius:30px;
+        background-color:rgba(255, 255, 255, 0.37);
+        border: 1px solid white;
+        margin: 60px 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap:20px;
+    }
+    .card-services h3 {
+        font-size:28px;
+        text-align: center;
+    }
+    .card-services p{
+        
+        text-align: center;
+    }
+    .card-services img{
+        width: 70px;
+        height: 70px;
     }
   }
