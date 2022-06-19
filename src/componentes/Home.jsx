@@ -23,7 +23,7 @@ export default function Home(){
       
     <div data-aos="zoom-in" className="presentation" id="home" >
       <span>#WeAreWebLeads</span>
-      <h1> Software Development Outsourcing <br/>Services </h1>
+      <h1> Software <br/>Development<br/> Outsourcing <br/>Services </h1>
       <p> Hire In-Demand Skills, On-Demand TM Web. Software, Mobile,DevOps and BlockChain. </p>
       <Link to="/book-a-call" className="first-button">SCHEDULE TIME TO TALK</Link> <br/>
       
@@ -70,11 +70,12 @@ export default function Home(){
 
 
         
-        <div className="text">
+        
+      </div>
+      <div className="text">
           <h2> Build Your Dedicated Team With Our Top Tech Skills </h2>
         </div>
         </div>
-      </div>
 
 
 

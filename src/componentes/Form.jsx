@@ -3,7 +3,6 @@ import React from "react";
 import { useState } from "react"
 import axios from "axios";
 import swal from "sweetalert";
-import Nav from "./Nav";
 
 export default function Form(){
 
