@@ -133,7 +133,12 @@
 
 
 @media screen and (min-width: 1000px) and (max-width:5000px){
-
+.get-in-touch h2{
+    color: white;
+    text-align:center;
+    padding: 60px 0px;
+    font-size: 50px;
+}
 
     
 .form{
@@ -153,12 +158,9 @@
 .form-left{
     width: 50%;
     background:linear-gradient(180deg,#1b1e28,#2babf0 80%);
+    padding: 20px;
 }
-.form-text-left{
-    display:flex;
-    flex-direction:column;
-    padding: 25px;
-}
+
 .form-left h2{
     font-size: 35px;
     text-align: left;
@@ -172,9 +174,7 @@
     
     width: 80%;
 }
-.form-left img{
-    width: 67.8px; height:67.8px;
-}
+
 .form-right{
     width: 50%;
     background-color: white;
