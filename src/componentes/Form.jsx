@@ -86,7 +86,7 @@ export default function Form(){
 
     return <>
     
-   <div className="get-in-touch"><h2>Get in touch with one member of our team<br/> and tell us about your needs</h2></div>
+   <div className="get-in-touch"><h2>Get in touch with a member of our team<br/> and tell us about your needs</h2></div>
 
     <div className="form" id="form-id">
         <div className="form-center">

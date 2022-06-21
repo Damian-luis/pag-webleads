@@ -224,27 +224,7 @@ export default function Home(){
 
 
        <h2 className="our-clients">Our clients</h2>
-       <div className="carrusel">
-      <div id="carouselExampleSlidesOnly" style={{width: "100%",
-    display: "flex",
-    justifyContent: "center"}} className="carousel slide" data-ride="carousel">
-  <div className="carousel-inner" style={{width: "50%",display:"flex",padding:"50px"}}>
-    <div  className="carousel-item active">
-      <img  style={{width:"100%",height:"100px"}} className="d-block " src={require("../imagenes/mati.png")} alt="First slide"/>
-    </div>
-    <div className="carousel-item">
-    <img  style={{width:"100%",height:"100px"}} className="d-block " src={require("../imagenes/advanced.png")} alt="Second slide"/>
-    </div>
-    <div className="carousel-item">
-      <img style={{width:"100%",height:"100px"}} className="d-block " src={require("../imagenes/genesis.png")} alt="Third slide"/>
-    </div>
-    <div  className="carousel-item">
-      <img style={{width:"30%",margin:"0 auto"}} className="d-block " src={require("../imagenes/kinetic.png")} alt="Third slide"/>
-    </div>
-  </div>
-</div>  
-
-</div>
+       
 
     <div className="carrusel-desktop">
         <div className="carrusel-desktop-cards">

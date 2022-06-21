@@ -256,8 +256,10 @@ img{
 
 
 .text{
-    width: 100%;
+    width: 80%;
     padding: 20px;
+    color: white;
+    text-align:center;
 }
 .text h2{
     font-size:40px;
@@ -500,9 +502,15 @@ img{
     
     
     
-
-    .carrusel-desktop{
-        display:none;
+    .our-clients{
+        text-align: center;
+        padding: 80px;
+        font-size: 36px;
+        color: white;
+    }
+    .carrusel-desktop-cards{
+        display:flex;
+        flex-direction: column;
     }
     .country{
         padding: 30px;
@@ -511,93 +519,401 @@ img{
   }
 
   @media screen and (min-width: 684px) and (max-width:1000px){
-   
+    .gradient1{
+        display: none;
+        position: absolute;
+        left: -60px;
+        top: 0px;
+        height: 920px;
+        width: 70%;
+        z-index: -100;
+    }
+    .gradient2{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 1500px;
+        height: 1500px; 
+        width: 70%;
+        z-index: -100;
+    }
+    .gradient3{display: none;
+        position: absolute;
+        top:6000px;
+        left: 0;
+        width: 70%;
+        height: 2500px;
+        z-index: -100;
+    }
+    .gradient4{
+        display: none;
+        position: absolute;
+        top: 10000px;
+        right: 0;
+        width: 100%;
+        z-index: -100;
+        height: 3000px;
+    }
+    .navecita{
+        display:none;
+    }
+    .presentation{
+        padding-top: 20px;
+        
+        width:60%;
+        display:flex;
+        flex-direction:column;
+        padding-left:50px;
+        row-gap:10px;
+    }
+    .presentation h1{
+       
+        font-weight: 700;
+        line-height: 1;
+        color: white;
+        font-size: 80px;
+    }
+    .presentation span{
+        color:white;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .presentation p{
+        font-size: 22px;
+        color: white;
+    }
+    .presentation-final-center{
+        color: white;
+    }
+    .presentation-final:hover{
+        color: white
+    }
+    .first-button{
+        background-color:#ff304a;
+        border-radius: 10px;
+        padding: 15px 20px;
+        font-size: 20px;
+        color: white;
+        width: 300px;
+        text-decoration: none;
+        z-index: 500;
+    }
+    .first-button:hover{
+        text-decoration: none;
+        color: white;
+        box-shadow: #1b1e28;
+        background-color: rgb(226, 26, 53)
+    }
+    .presentation-final{
+        color: white;
+        
+    }
+
+
+
+
+
+    .our-services{
+        text-align: center;
+        padding-top: 100px;
+        display:flex;
+        flex-direction: column;
+        row-gap: 50px;
+        align-items: center;
+    }
+    .our-services h2{
+        color: white;
+        font-size: 60px;
+        text-align: center;
+        width: 80%;
+        padding-top: 50px;
+    }
+    .our-services p{
+        color: white;
+        font-size: 24px;
+        width: 80%;
+    }
+
+
+
+
+
+    .cards-experience-center{
+        display:flex;
+        flex-wrap: wrap;
+        row-gap: 100px;
+    }
+
+
+
+
+    .cards-services{
+        display:flex;
+        flex-wrap: wrap;
+        height:auto;
+        justify-content:center;
+    }
+    .card-services-center{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .text{
+        text-align: center;
+        width: 80%;
+        color: white;
+    }
+
+    .card-services{
+        width: 295px;
+        color: white;
+        border-radius:30px;
+        background-color:rgba(255, 255, 255, 0.37);
+        border: 1px solid white;
+        margin: 60px 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap:20px;
+    }
+    .card-services h3 {
+        font-size:28px;
+        text-align: center;
+    }
+    .card-services p{
+        
+        text-align: center;
+    }
+    .card-services img{
+        width: 70px;
+        height: 70px;
+    }
+
+
+
+    .mini-cards{
+        height:auto;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .center-mini-cards{
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .mini-card{
+        width:50%;
+        display:flex;
+        align-items: center;
+        padding: 30px;
+    }
+    .mini-card img{
+        width:130px;
+        height:130px;
+        border:1px solid white;
+        object-fit: contain;
+        padding: 2rem;
+        border-radius:10px;
+    }
+    .mini-card p{
+        color:white;
+        text-align:left;
+        padding-left: 5%;
+    }
+
+
+
+
+    .three-steps{
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+    .three-steps-text{
+        display:flex;
+        flex-direction:column;
+        row-gap:50px;
+        align-items:center;
+        
+    }
+    .three-steps-text h2{
+        font-size:60px;
+        color:white;
+        text-align:center;
+    }
+    .three-steps-text img{
+        width:40%;
+    }
+    .three-steps-cards{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        margin: 50px;
+        row-gap:100px;
+    }
+    .three-steps-card{
+        width:295px;
+        background-color:hsla(0,0%,100%,.37);
+        padding:20px;
+        text-align:center;
+        border-radius:30px;
+        border: 1px solid white;
+    }
+    .three-steps-card img{
+        width: 77px;
+        height: 77px;
+    }
+    .three-steps-card h3{
+        font-size:28px;
+        text-align: center;
+        color: white;
+    }
+    .three-steps-card p{
+        text-align: center;
+        color: white;
+    }
+
+
+
+
+
+    .industry-experience{
+        display:flex;
+        flex-direction: column;
+        row-gap: 50px;
+        align-items:center;
+    }
+    .industry-experience a{
+        text-align: center;
+    }
+    .industry-experience h2{
+        font-size:60px;
+        text-align: center;
+        color: white;
+    }
+    .industry-experience p{
+        font-size:25px;
+        color: white;
+        text-align: center;
+    }
+
+
+
+
+
+    .cards-experience{
+        display:flex;
+        flex-wrap: wrap;
+        margin-top: 150px;
+        
+        row-gap:100px;
+    }
+    .cards-experience-center{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 100px;
+    
+    }
+    .card-experience{
+        width:25%;
+        text-align: center;
+    }
+    .img1{
+        width: 192px;
+        height:  127px;
+    }
+    
+    .img2{
+        width: 129px;
+        height: 127px;
+    }
+    
+    .img3{
+        width:243px;
+        height: 130px;
+    }
+    
+    .img4{
+        width:  161px;
+        height:  127px;
+    }
+    
+    .img5{
+        width: 140px;
+        height:102px;
+    }
+    
+    .img6{
+        width: 159px;
+        height: 130px;
+    }
+    .img7{
+        width: 129px;
+        height: 119px;
+    }
+    .img8{
+        width: 185px;
+        height: 124px;
+    }
+    .img9{
+        width: 140px;
+        height: 96px;
+    }
+    .img10{
+        width: 159px;
+        height: 128px;
+    }
+    .img11{
+        width: 129px;
+        height: 120px;
+    }
+    .img12{
+        width: 185px;
+        height: 119px;
+    }
+
+
+
+
+
+    .ourInfrastructure{
+        width: 80%;
+    }
+    .long-cards{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 100px;
+    }
+    .long-card{
+        width: 342px;
+    }
+    .long-card img{
+        width: 342px;
+        height: 488px;
+    }
+    .long-card h3{
+        font-size:25px;
+        color: white;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+
+
+
+
+
+
+
       .text{
         padding-top: 50px;
         padding-bottom: 150px;
       }
-      .navecita{
-        position: relative;
-        width: 50%;
-        height: 50%;
-        margin: 0 auto;
-      }
-      .mini-cards{
-          display:flex;
-          flex-direction: column;
-          align-items: center;
-          row-gap: 50px;
-      }
-      .mini-card{
-          width: 80%;
-      }
-      .three-steps-text{
-        padding-top: 100px;
-      }
-      .three-steps-text h2{
-          font-size: 50px;
-      }
-      .three-steps-cards{
-        gap: 50px;
-        padding-bottom: 80px;
-      }
-      .industry-experience{
-        padding-bottom: 80px;
-      }
-      .cards-experience{
-        display: flex;
-        flex-wrap: wrap;
-        align-items:center;
-        row-gap:100px;
-      }
-      .card-experience{
-          width: 45%;
-      }
-      .ourInfrastructure{
-        margin: 20px;
-      }
-      .long-cards{
-        justify-content: space-around;
-        padding-top: 80px;
-        row-gap: 80px;
-        padding-bottom: 80px;
-      }
-      .fotos{
-        padding-left: 5%;
-        column-gap: 20px;
-        display: flex;
-      }
-      form button{
-          width: 100px
-      }
-
-      .carrusel{
-        display:none
-      }
-      .carrusel-desktop{
-        display: flex;
-    justify-content: center;
-    }
-    .carrusel-desktop-cards{
-        display: flex;
-        column-gap:25px;
-    
-    }
-    .carrusel-desktop-cards img{
-        width: 150px;
-    }
-    .kinetic{
-        width: 40px!important;
-        
-    }
-    .form-center{
-        width: 80%;
-    }
-    .form-left{
-        display:flex;
-        flex-direction:column;
-        padding: 25px;
-    }
+      
   }
 
 
@@ -748,6 +1064,7 @@ img{
         text-align: center;
         width: 80%;
         color: white;
+        margin: 80px;
     }
 
     .card-services{
@@ -962,10 +1279,34 @@ img{
 
 
 
+.carrusel-desktop{
+    display: flex;
+    justify-content: center;
+}
+.carrusel-desktop-cards{
+    width: 80%;
+    display: flex;
+    justify-content:space-around;
+}
+
+
+
+
+
+
 
 .ourInfrastructure{
-    width: 80%;
+    margin: 80px;
 }
+.ourInfrastructure h2{
+    font-size:50px;
+}
+
+
+
+
+
+
 .long-cards{
     display:flex;
     flex-wrap: wrap;

@@ -3,6 +3,7 @@ import Home from "./componentes/Home";
 import Calendly from "./componentes/Calendly";
 import Form from "./componentes/Form";
 import Nav from "./componentes/Nav";
+import PrivacyPolicy from "./componentes/PrivacyPolicy";
 import Footer from "./componentes/Footer";
 import ScrollToTop from "./componentes/ScrollToTop";
 import "./componentes/Nav.css"
