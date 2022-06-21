@@ -36,7 +36,7 @@ function App() {
       <Route path="/" element={<Home/>} />
       <Route path="/book-a-call" element={<Calendly/>} />
       <Route path="/contact-us" element={<Form/>} />
-    
+      <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
       {/*<Route path="https://webleadsgroup.com/book-a-call" element={<Calendly/>} />  */}
       
       
