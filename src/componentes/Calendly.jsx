@@ -7,9 +7,7 @@ import Nav from "./Nav";
 export default function Calendly(){
     return <>
     
-    <div className="calendly-text">
-      <h2>Please choose the best day for you </h2>
-    </div>
+  
     
     
     <div className="calendly">

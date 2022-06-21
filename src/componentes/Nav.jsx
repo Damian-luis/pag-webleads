@@ -8,7 +8,7 @@ export default function Nav(){
     <div className="links">
     <ul>
         <li><Link to="/">HOME</Link></li>
-        <li><a href="#our-services">SERVICES</a></li>
+        <li><a href="https://webleadsgroup.com/#our-services">SERVICES</a></li>
         <li><Link to="/contact-us">CONTACT</Link></li> 
     </ul> </div>
   </nav></>
