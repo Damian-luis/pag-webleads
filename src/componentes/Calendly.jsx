@@ -21,7 +21,7 @@ export default function Calendly(){
       
     <img src={logo1} className="gradient1-calendly"/>
       <img src={logo2} className="gradient2-calendly"/>
-      <InlineWidget url="https://calendly.com/julio-mayaudon/what-can-we-help-you-with?month=2022-06" />
+      <InlineWidget url="https://calendly.com/damian-luis-porta/prueba?back=1&month=2022-07" />
 
 
       
